@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Outline Mail - making html email easy. Example 4.</title>
+  <title>Outline Mail - making html email easy. Example eCommerce.</title>
   <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -65,29 +65,23 @@
 
 <!-- hidden preheader text - Remember to change it! -->
 <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
-  Outline Mail - making html email easy. Example 1.
+  Outline Mail - making html email easy. Example eCommerce.
 </div>
 
 <!-- Don't forget to include a header -->
-@@include('misc/_view-in-browser.html')
-
-@@include('header/_header-full-centre.html')
+@@include('header/_header-full.html')
 
 <!-- Include all your body email components here -->
-@@include('misc/_section-title-centre.html')
+@@include('ecommerce/_ecommerce-intro.html')
 
-@@include('two-up/_two-up.html')
+@@include('ecommerce/_ecommerce-order-delivery.html')
 
-@@include('three-up/_three-up.html')
+@@include('ecommerce/_ecommerce-order-details.html')
 
-@@include('three-up/_three-up.html')
-
-@@include('misc/_section-title-centre.html')
-
-@@include('four-up/_four-up.html')
+@@include('ecommerce/_ecommerce-order-total.html')
 
 <!-- Don't forget to include a footer -->
-@@include('footer/_footer-full-centre.html')
+@@include('footer/_footer-full.html')
 
 </body>
 </html>
