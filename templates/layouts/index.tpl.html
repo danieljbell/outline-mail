@@ -2,12 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      background-image: url(/img/bg-pattern-light.png), linear-gradient(#757a82,#474a4f);
+      height: 100%;
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #fff;
+      padding: 2rem;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      /*justify-content: center;*/
+    }
+    li {
+      width: 100%;
+      max-width: 250px;
+      margin-right: 2rem;
+      margin-bottom: 3rem;
+    }
+    li img {
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    a {
+      text-decoration: none;
+    }
+    li a {
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-primary {
+      display: inline-block;
+      background-color: #ed4c06;
+      color: #ffffff;
+      padding: 0.5rem 0.75rem;
+      text-align: center;
+      margin: 1rem auto 0;
+      border-radius: 5px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    }
+    .box {
+      background-color: #f0f0f0;
+      background-image: linear-gradient(#fff,#f0f0f0);
+      border-radius: 5px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.25);
+      padding: 2rem;
+    }
+    .box h2 {
+      color: #000;
+      margin: 0 0 1rem;
+      /*text-align: center;*/
+    }
+  </style>
 </head>
 <body>
-  <ul>
-    <li><a href="/standard-light.html">Standard - Light</a></li>
-  </ul>
-
+  <div class="box">
+    <h2>Standard Emails</h2>
+    <ul>
+      <li>
+        <a href="/standard-light.html">
+          <img src="/img/standard-light.png" alt="">
+          <p class="btn-primary">Standard - Light</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-dark.html">
+          <img src="/img/standard–dark.png" alt="">
+          <p class="btn-primary">Standard - Dark</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-orange.html">
+          <img src="/img/standard–orange.png" alt="">
+          <p class="btn-primary">Standard - Orange</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-blue.html">
+          <img src="/img/standard–blue.png" alt="">
+          <p class="btn-primary">Standard - Blue</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-green.html">
+          <img src="/img/standard–green.png" alt="">
+          <p class="btn-primary">Standard - Green</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-purple.html">
+          <img src="/img/standard–purple.png" alt="">
+          <p class="btn-primary">Standard - Purple</p>
+        </a>
+      </li>
+      <li>
+        <a href="/standard-yellow.html">
+          <img src="/img/standard–yellow.png" alt="">
+          <p class="btn-primary">Standard - Yellow</p>
+        </a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
