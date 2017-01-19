@@ -178,73 +178,22 @@
   <!-- Background -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#474a4f" style="background-image: url(/img/bg-pattern-dark.png), linear-gradient(#757a82,#474a4f); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
+      <td bgcolor="#f0f0f0" style="background-image: url(/img/bg-pattern-dark.png), linear-gradient(#ffffff,#f0f0f0); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
 
-        <!-- Header full -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td align="center">
-      <table style="min-width: 320px;" class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-        <tr>
-          <td style="padding: 54px 0px 18px 0px;" align="left">
-            <!-- Two column -->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <td>
-                  <!-- content left -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
-                    <tr>
-                      <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3;">
-                        <a href="https://octiv.com" target="_blank">
-                          <img style="display: block" src="/img/Octiv-Logo-White.png" width="185" height="40" border="0" alt="Outline Mail" class="center-mobile">
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- /content left -->
-                  <!-- content right -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
-                    <tr>
-                      <td style="text-align: right; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; line-height: 1.3; text-shadow: 1px 1px 2px rgba(0,0,0,0.65);" class="center-mobile">
-                        Newsletter Title
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- /content right -->
-                </td>
-              </tr>
-            </table>
-            <!-- /Two column -->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /Header full -->
-
+        @@include('header/_header-full-light.html', {
+          "title": "Newsletter Title"
+        })
         <!-- Email Container -->
         <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.15);">
           <tr>
             <td class="hero" align="top" style="background-color: #333; background-image: url(/img/newsletter-hero.png); background-position: center; background-size: cover; background-repeat: no-repeat; font-family: 'Source Sans Pro', Helvetica, Arial sans-serif; font-size: 18px; line-height: 22px; text-align: center; color: #ffffff; text-shadow: 2px 2px 3px rgba(0,0,0,0.5); padding: 36px 36px 18px; border-radius: 5px 5px 0 0;">
               <h1 style="font-size: 28px; padding: 0 36px;">A New Medium for Sales Communication Will Emerge in 2017</h1>
               <p style="font-size: 20px; line-height: 22px; padding: 0 36px;">From our 17 Top Sales Trends for 2017: Josh Schwartz predicts that sales teams are going to have to get creative with communication this year.</p>
-              <!-- Button -->
-<table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-bottom: 1rem;">
-  <tr>
-    <td align="center">
-      <table border="0" cellspacing="0" cellpadding="0" class="button-table">
-        <tr>
-          <td align="center">
-            <a class="email-button white" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; display: block; color: #ffffff; font-family: 'Source Sans Pro',Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; padding: 6px 18px;" href="https://octiv.com" target="_blank">Read Now</a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /Button -->
-
+              @@include('misc/_button-outline.html', {
+                "text": "Read Now",
+                "color": "#ffffff",
+                "location" : "https://octiv.com"
+              })
             </td>
           </tr>
           <tr>
@@ -278,22 +227,12 @@
                             </tr>
                             <tr>
                               <td>
-                                <!-- Button -->
-<table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-bottom: 1rem;" class="button-arrow-table">
-  <tr>
-    <td align="left">
-      <table border="0" cellspacing="0" cellpadding="0" class="button-table">
-        <tr>
-          <td align="left" style="padding-left: 18px;">
-            <a class="email-button button-arrow" style="border-bottom: 2px solid #42b0d8; display: inline-block; color: #000000; font-family: 'Source Sans Pro',Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none;" href="https://octiv.com" target="_blank">Read Now ></a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /Button -->
-
+                                @@include('misc/_button-arrow.html', {
+                                  "text" : "Read Now",
+                                  "color" : "#42b0d8",
+                                  "location" : "https://octiv.com",
+                                  "align" : "left"
+                                })
                               </td>
                             </tr>
                           </table>
@@ -325,22 +264,12 @@
                             </tr>
                             <tr>
                               <td>
-                                <!-- Button -->
-<table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-bottom: 1rem;" class="button-arrow-table">
-  <tr>
-    <td align="left">
-      <table border="0" cellspacing="0" cellpadding="0" class="button-table">
-        <tr>
-          <td align="left" style="padding-left: 18px;">
-            <a class="email-button button-arrow" style="border-bottom: 2px solid #42b0d8; display: inline-block; color: #000000; font-family: 'Source Sans Pro',Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none;" href="https://octiv.com" target="_blank">Read Now ></a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /Button -->
-
+                                @@include('misc/_button-arrow.html', {
+                                  "text" : "Read Now",
+                                  "color" : "#42b0d8",
+                                  "location" : "https://octiv.com",
+                                  "align" : "left"
+                                })
                               </td>
                             </tr>
                           </table>
@@ -424,53 +353,7 @@
           </tr>
         </table>
 
-        <!-- footer -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td style="padding: 32px 0 0 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="center">
-            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 0;" align="center" valign="top">
-                  <!-- Two column -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td>
-                        <!-- content left -->
-                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
-                          <tr>
-                            <td class="center-mobile" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.65); font-size: 0.75em; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal; opacity: 0.65;" align="left">
-                              <p><strong>Octiv</strong><br>54 Monument Circle, Suite 200<br>Indianapolis, IN 46240<br>317.550.0148</p>
-                            </td>
-                          </tr>
-                        </table>
-                        <!-- /content left -->
-                        <!-- content right -->
-                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
-                          <tr>
-                            <td class="center-mobile" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.65); opacity: 0.65; font-size: 0.75em; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="right">
-                              <p>© 2017 Octiv. All rights reserved.<br><a href="#" style="color: #ffffff;">View Online</a><br><a href="#" style="color: #ffffff;">Update Subscription Preferences</a><br><a href="#" style="color: #ffffff;">Unsubscribe</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                        <!-- /content right -->
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- /Two column -->
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /footer -->
-
+        @@include('footer/_footer-light.html')
 
         </td>
       </tr>
