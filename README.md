@@ -1,6 +1,3 @@
-# Outline Mail
-Outline Mail is a HTML email boilerplate, created by [Matt Harris](https://twitter.com/matty_h)
-
 ## Full Documentation
 View full documentation at: http://outlinemail.co.uk/get-started.html
 
@@ -8,7 +5,6 @@ View full documentation at: http://outlinemail.co.uk/get-started.html
 Node.js
 
 ## Quick Start
-
 - Clone the repository
   ```
   [sudo] git clone git@github.com:matt-harris/outline-mail.git
@@ -22,23 +18,8 @@ Node.js
   gulp
   ```
 
-## Features - Included Gulp Tasks
-
-- Image minification
-  - Any images put in ```templates/img/``` with .gif, .jpg and .png extensions will be optimized and placed in ```dist/img/```.
-- Browser Sync
-  - Allows your browser to live reload when making changes.
-- Gulp Mailgun
-  - When edited with your API key and credentials, this task will send your compiled emails to the specified email account.
-- Browser Sync
-  - Allows your browser to live reload when making changes.
-
-## Updates
-
-Keep track of updates by following [@matty_h](https://twitter.com/matty_h) on Twitter.
-
-## License
-
-Outline is free to use under the [MIT License](LICENSE).
-
-Copyright [Matt Harris](http://www.matt-harris.net)
+## Marketo Hosted Global Assets
+http://lp.octiv.com/rs/625-MXY-689/images/bg-pattern-dark.png
+http://lp.octiv.com/rs/625-MXY-689/images/bg-pattern-light.png
+http://lp.octiv.com/rs/625-MXY-689/images/Octiv-Logo-Color.png
+http://lp.octiv.com/rs/625-MXY-689/images/Octiv-Logo-White.png
