@@ -1,0 +1,145 @@
+/* CLIENT-SPECIFIC STYLES */
+#outlook a { padding: 0; }
+.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode:bicubic; }
+/* RESET STYLES */
+body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+/* Remove margin on email wrapper in Android 4.4 KitKat */
+/* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+/* Remove ios blue links */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/*
+==============================
+OCTIV STYLES
+==============================
+*/
+* {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+td {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000000;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+ul li {
+  color: #ed4c06;
+  margin-bottom: 0.25em;
+}
+
+li span {
+  color: #000000;
+}
+
+p ~ ul {
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+hr {
+  margin-bottom: 1rem;
+  border-top: 1px solid #cccccc;
+}
+
+.email-button {
+  transition: all 200ms ease-out;
+}
+
+.email-button:hover {
+  background-color: #BE3D05 !important;
+  border-color: #BE3D05 !important;
+}
+
+.white.email-button:hover {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+.button-arrow.email-button:hover {
+  color: #ffffff !important;
+  background-color: initial !important;
+  border-color: #42b0d8 !important;
+  box-shadow: inset 0 -32px 0 #42b0d8;
+}
+
+@media only screen and (max-width: 599px) {
+  .content-table {
+    width: 100% !important;
+  }
+
+  img[class="img-max"]{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  table[class="mobile-button-wrap"]{
+    margin: 0 auto;
+    width: 100% !important;
+  }
+
+  a[class="mobile-button"]{
+    width: 80% !important;
+    padding: 8px !important;
+    border: 0 !important;
+  }
+
+  .mobile-align-center {
+    text-align: center !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .center-mobile {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  .button-table {
+    width: 100%;
+  }
+
+  .callout p {
+    padding: 0 !important;
+  }
+}
