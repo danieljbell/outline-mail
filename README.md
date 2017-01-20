@@ -1,5 +1,5 @@
 ## Full Documentation
-View full documentation at: http://outlinemail.co.uk/get-started.html
+View full documentation at: https://octiv.com/get-started.html
 
 ## Dependencies
 Node.js
