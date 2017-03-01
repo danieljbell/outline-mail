@@ -5,22 +5,22 @@ View full documentation at: https://octiv.com/get-started.html
 Node.js
 
 ## Quick Start
-- Clone the repository
-  ```
-  git clone https://github.com/danieljbell/outline-mail.git
-  ```
-- `cd` into the directory
-  ```
-  cd outline-mail
-  ```  
-- Install dependencies using NPM
-  ```
-  npm install
-  ```
-- Run Gulp's default task
-  ```
-  gulp
-  ```
+- Clone the repository  
+```
+git clone https://github.com/danieljbell/outline-mail.git
+```
+- `cd` into the directory  
+```
+cd outline-mail
+```  
+- Install dependencies using NPM  
+```
+npm install
+```
+- Run Gulp's default task  
+```
+gulp
+```
 
 ## Marketo Hosted Global Assets
 - BG Pattern Dark  
