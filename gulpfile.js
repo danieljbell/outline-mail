@@ -75,11 +75,11 @@ gulp.task('fileinclude', function() {
 // Compress images
 gulp.task('images', function() {
   gulp.src('templates/img/*.{gif,jpg,png}')
-  .pipe(cache(images({
-    optimizationLevel: 4,
-    progressive: true,
-    interlaced: true
-  })))
+  // .pipe(cache(images({
+  //   optimizationLevel: 4,
+  //   progressive: true,
+  //   interlaced: true
+  // })))
   .pipe(gulp.dest('dist/img/'))
 
   // notify to say the task has complete
@@ -130,7 +130,7 @@ gulp.task('litmus-test', function () {
 
 // Watch files for changes
 gulp.task('watch', function() {
-  gulp.watch(['templates/components/**/*.html'], ['fileinclude']);
+  gulp.watch(['templates/components/**/*.html', 'templates/components/**/*.css'], ['fileinclude', 'reload']);
   gulp.watch(['templates/layouts/*.tpl.html'], ['fileinclude']);
   gulp.watch(['*.html'], ['reload']);
   gulp.watch(['*.tpl.html'], ['reload']);
