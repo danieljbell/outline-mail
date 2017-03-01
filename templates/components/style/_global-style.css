@@ -42,13 +42,21 @@ p {
   background-color: rgb(255, 255, 255) !important;
   border-color: rgb(255, 255, 255) !important;
   color: rgb(0, 0, 0) !important;
-  text-shadow: none !important;
 }
 .button-arrow.email-button:hover {
   color: rgb(255, 255, 255) !important;
-  background-color: initial !important;
-  border-color: rgb(66, 176, 216) !important;
-  box-shadow: inset 0 -32px 0 rgb(66, 176, 216);
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: inset 0 -36px 0 #42b0d8 !important;
+}
+.button-group .button-one-container {
+  text-align: right;
+}
+.button-group .button-two-container {
+  text-align: left;
+}
+.button-group .email-button {
+  display: inline-block !important;
 }
 @media only screen and (max-width: 599px) {
   .content-table {
@@ -104,5 +112,15 @@ p {
     line-height: 1.1 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .button-group .button-one-container {
+    text-align: center !important;
+    padding-bottom: 9px !important;
+  }
+  .button-group .button-one-container .email-button {
+    display: block !important;
+  }
+  .button-group .button-two-container {
+    text-align: center !important;
   }
 }

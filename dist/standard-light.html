@@ -1,11 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-  <title>Outline Mail - making html email easy. Example eCommerce.</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet" type="text/css" />
+
+<!-- Marketo Variables -->
+  <meta class="mktoString" id="email-title" mktoname="Email Title" default="Octiv Powers Documents" />
+  <meta class="mktoString" id="email-type" mktoname="Email Type" default="Email Type" />
+  <meta class="mktoString" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="preheader-text" mktoname="PreHeader Text" default="Octiv Powers Documents" />
+  <meta class="mktoString" id="hero-title" mktoname="Hero Title" default="SaaS Buyer Journey Timeline" />
+  <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Together with Forrester, Octiv has mapped its own buyer journey." />
+  <meta class="mktoString" id="salutation-text" mktoname="Salutation Text" default="{{Lead.First Name}}" />
+  <meta class="mktoString" id="basic-paragraph-text" mktoname="Basic Paragraph Text" mktomodulescope="true" default="Thank you for downloading our whitepaper!" />
+  <meta class="mktoString" id="button-text" mktoname="Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="button-link" mktoname="Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="primary-button-text" mktoname="Primary Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="primary-button-link" mktoname="Primary Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="secondary-button-text" mktoname="Secondary Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="secondary-button-link" mktoname="Secondary Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="basic-image-link" mktoname="Basic Image Link" mktomodulescope="true" default="#0" />
+  <meta class="mktoString" id="basic-image" mktoname="Basic Image" mktomodulescope="true" default="https://unsplash.it/600/200" />
+  <meta class="mktoString" id="closing-text" mktoname="Closing Text" mktomodulescope="true" default="Regards" />
+  <meta class="mktoString" id="closing-name" mktoname="Closing Name" mktomodulescope="true" default="Daniel Bell" />
+  <meta class="mktoString" id="closing-title" mktoname="Closing Title" mktomodulescope="true" default="Interactive Designer" />
+<!-- /Marketo Variables -->
+
+<!-- Other Meta -->
   <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- /Other Meta -->
+
+<title>${email-title}</title>
+
   <style type="text/css">
     /* CLIENT-SPECIFIC STYLES */
 #outlook a { padding: 0; }
@@ -51,13 +78,21 @@ p {
   background-color: rgb(255, 255, 255) !important;
   border-color: rgb(255, 255, 255) !important;
   color: rgb(0, 0, 0) !important;
-  text-shadow: none !important;
 }
 .button-arrow.email-button:hover {
   color: rgb(255, 255, 255) !important;
-  background-color: initial !important;
-  border-color: rgb(66, 176, 216) !important;
-  box-shadow: inset 0 -32px 0 rgb(66, 176, 216);
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: inset 0 -36px 0 #42b0d8 !important;
+}
+.button-group .button-one-container {
+  text-align: right;
+}
+.button-group .button-two-container {
+  text-align: left;
+}
+.button-group .email-button {
+  display: inline-block !important;
 }
 @media only screen and (max-width: 599px) {
   .content-table {
@@ -114,19 +149,45 @@ p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .button-group .button-one-container {
+    text-align: center !important;
+    padding-bottom: 9px !important;
+  }
+  .button-group .button-one-container .email-button {
+    display: block !important;
+  }
+  .button-group .button-two-container {
+    text-align: center !important;
+  }
 }
 
   </style>
+
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
 </head>
 
 <body style="height: 100%; margin: 0 !important; padding: 0 !important;">
 
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+
   <!-- Background -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#f0f0f0" style="background-image: url(/img/bg-pattern-dark.png), linear-gradient(#ffffff,#f0f0f0); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
+      <td bgcolor="#f0f0f0" style="background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/bg-pattern-dark.png), linear-gradient(#ffffff,#f0f0f0); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
 
-        <!--
+<!--
 =====================
 HEADER FULL
 =====================
@@ -191,19 +252,87 @@ HEADER FULL
 =====================
 -->
 
-        <!-- Email Container -->
-        <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.15);">
-          <tr>
-            <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 36px;">
-							<h1 style="font-size: 1.4em; line-height: 1;">Daniel,</h1>
-              <p>Join the Octiv Account Management team as they share some best practices on using and managing Octiv on a daily basis.</p>
-              <p><strong>By attending this webinar you’ll learn:</strong></p>
-              <ul>
-                <li><span>Tips and tricks for using the platform</span></li>
-                <li><span>Best practices for both administrators and users</span></li>
-                <li><span>How to get the most out of your Octiv solution</span></li>
-              </ul>
-              <!--
+<!--
+=====================
+EMAIL CONTAINER
+=====================
+-->
+  <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.15);">
+    <tbody>
+      <tr>
+<!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+      </tr>
+      <tr>
+        <td class="mktoContainer" id="template-wrapper" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; font-size: 18px; line-height: 22px;">
+<!--
+=====================
+SALUTATION
+=====================
+-->
+  <table mktoaddbydefault="false" class="mktoModule" id="salutation-container" mktoname="Salutation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+    <tbody>
+      <tr>
+        <td class="mktEditable container" id="salutation" mktoname="Salutation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 26px; line-height: 1; padding: 0 36px;">
+          <p style="font-weight: bold; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 24px; line-height: 1; padding: 0 0 18px; margin: 0;">${salutation-text},</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<!--
+=====================
+/SALUTATION
+=====================
+-->
+
+<!--
+=====================
+BASIC PARAGRAPH
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="basic-paragraph-container" mktoname="Basic Paragraph" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> ${basic-paragraph-text} </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/BASIC PARAGRAPH
+=====================
+-->
+
+<!--
+=====================
+EDITABLE PARAGRAPH
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="editable-paragraph-container" mktoname="Editable Paragraph" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td class="mktEditable container" id="editable-paragraph" mktoname="Editable Paragraph" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> Editable Basic Paragraph </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/EDITABLE PARAGRAPH
+=====================
+-->
+
+<!--
 =====================
 DIVIDER
 =====================
@@ -211,7 +340,7 @@ DIVIDER
 <table class="mktoModule" id="divider" mktoname="Section Divider" mktoaddbydefault="false" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
   <tbody>
     <tr>
-      <td style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0;" bgcolor="#ffffff" align="center">
+      <td class="container" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 36px;" bgcolor="#ffffff" align="center">
         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
           <tbody>
             <tr>
@@ -231,8 +360,7 @@ DIVIDER
 =====================
 -->
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore deserunt reprehenderit at, quae, perferendis vel!</p>
-              <!--
+<!--
 =====================
 BUTTON
 =====================
@@ -244,7 +372,7 @@ BUTTON
         <table border="0" cellspacing="0" cellpadding="0" class="button-table" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
           <tbody>
             <tr>
-              <td class="mktEditable" id="local-button" mktoname="Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px;">
+              <td class="mktEditable container" id="local-button" mktoname="Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 36px 18px;">
                 <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${button-link}" target="_blank">${button-text}</a>
               </td>
             </tr>
@@ -260,11 +388,118 @@ BUTTON
 =====================
 -->
 
-              <p>Regards,</p>
-              <p><strong style="color: #ed4c06;">Adam Becker</strong><br><em>Director, Account Management</em></p>
-            </td>
-          </tr>
+<!--
+=====================
+IMAGE
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="basic-image" mktoname="Basic Image" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 0 18px;">
+        <div class="mktoImg" id="exampleImg" mktoName="Example Image" mktoImgLink="http://www.marketo.com">
+          <a><img class="img-max"></a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/IMAGE
+=====================
+-->
+
+<!--
+=====================
+TWO BUTTONS
+=====================
+-->
+  <!-- Two column -->
+  <table mktoaddbydefault="false" class="mktoModule" id="two-button-group" mktoname="Two Button Group" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+    <tbody>
+      <tr>
+        <td class="button-group container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 36px;">
+
+        <!-- content left -->
+        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+          <tbody>
+            <tr>
+              <td class="mktEditable button-one-container" id="local-button-one" mktoname="Primary Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px;">
+                <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${primary-button-link}" target="_blank">${primary-button-text}</a>
+              </td>
+            </tr>
+          </tbody>
         </table>
+        <!-- /content left -->
+
+        <!-- content right -->
+        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+          <tbody>
+            <tr>
+              <td class="mktEditable button-two-container" id="local-button-two" mktoname="Secondary Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px;">
+                <a class="email-button button-arrow" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: #ffffff;border-top: 9px solid #ffffff;border-right: 18px solid #ffffff;border-bottom: 9px solid #ffffff;border-left: 18px solid #ffffff;display: block;color: #000000;font-size: 18px;font-weight: normal;line-height: 24px;text-decoration: none;border-radius: 5px; box-shadow: inset 0 -3px 0 #42b0d8; padding: 0 0 3px; transition: all 200ms ease-out;" href="${secondary-button-link}" target="_blank">${secondary-button-text} &nbsp;></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- /content right -->
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <!-- /Two column -->
+<!--
+=====================
+/TWO BUTTONS
+=====================
+-->
+
+<!--
+=====================
+CLOSING
+=====================
+-->
+  <table mktoaddbydefault="false" class="mktoModule" id="closing" mktoname="Closing" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+    <tbody>
+      <tr>
+        <td class="container" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px;">
+          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 1rem; ">${closing-text},</p>
+          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 1rem; margin-bottom: 0;"><strong style="color: #ed4c06;">${closing-name}</strong><br /><em>${closing-title}</em></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<!--
+=====================
+/CLOSING
+=====================
+-->
+
+        </td>
+      </tr>
+
+<!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+    </tbody>
+  </table>
+<!--
+=====================
+/EMAIL CONTAINER
+=====================
+-->
 
         <!-- footer -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
