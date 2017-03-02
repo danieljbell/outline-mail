@@ -6,7 +6,7 @@
 <!-- Marketo Variables -->
   <meta class="mktoString" id="email-title" mktoname="Email Title" default="Octiv Powers Documents" />
   <meta class="mktoString" id="email-type" mktoname="Email Type" default="Email Type" />
-  <meta class="mktoString" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
+  <meta class="mktoImg" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
   <meta class="mktoString" id="preheader-text" mktoname="PreHeader Text" default="Octiv Powers Documents" />
   <meta class="mktoString" id="hero-title" mktoname="Hero Title" default="SaaS Buyer Journey Timeline" />
   <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Together with Forrester, Octiv has mapped its own buyer journey." />
@@ -18,6 +18,8 @@
   <meta class="mktoString" id="primary-button-link" mktoname="Primary Button Link" mktomodulescope="true" default="https://octiv.com" />
   <meta class="mktoString" id="secondary-button-text" mktoname="Secondary Button Text" mktomodulescope="true" default="Download It Now!" />
   <meta class="mktoString" id="secondary-button-link" mktoname="Secondary Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="callout-title" mktoname="Callout Title" mktomodulescope="true" default="Callout Title" />
+  <meta class="mktoString" id="callout-text" mktoname="Callout Text" mktomodulescope="true" default="Callout Text" />
   <meta class="mktoString" id="basic-image-link" mktoname="Basic Image Link" mktomodulescope="true" default="#0" />
   <meta class="mktoString" id="basic-image" mktoname="Basic Image" mktomodulescope="true" default="https://unsplash.it/600/200" />
   <meta class="mktoString" id="closing-text" mktoname="Closing Text" mktomodulescope="true" default="Regards" />
@@ -453,6 +455,69 @@ TWO BUTTONS
 <!--
 =====================
 /TWO BUTTONS
+=====================
+-->
+
+<!--
+=====================
+CALLOUT - Light
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="callout-light" mktoname="Light Callout" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 0 18px;">
+  <tbody>
+    <tr>
+      <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 36px; text-align: center; background-color: #f0f0f0; background-image: linear-gradient(#f0f0f0, #eeeeee);">
+        <p style="font-size: 22px; line-height: 1; font-weight: bold;">${callout-title}</p>
+        <p>${callout-text}</p>
+        <!--
+        =====================
+        BUTTON
+        =====================
+        -->
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+          <tbody>
+            <tr>
+              <td align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                <table border="0" cellspacing="0" cellpadding="0" class="button-table" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                  <tbody>
+                    <tr>
+                      <td class="mktEditable" id="callout-button" mktoname="Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0;">
+                        <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${button-link}" target="_blank">${button-text}</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--
+        =====================
+        /BUTTON
+        =====================
+        -->
+      </td>
+    </tr>
+    <tr>
+      <!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/CALLOUT - Light
 =====================
 -->
 
