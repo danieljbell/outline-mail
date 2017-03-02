@@ -271,8 +271,10 @@ HERO
   <tbody>
     <tr>
       <td class="mktEditable hero" id="hero" mktoname="Hero" align="top" bgcolor="#333333" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #333333; color: #ffffff; background-image: url(${hero-image}); background-position: center; background-size: cover; background-repeat: no-repeat; font-family: 'Source Sans Pro', Helvetica, Arial sans-serif; font-size: 18px; line-height: 22px; text-align: center; color: #ffffff !important; text-shadow: 2px 2px 3px rgb(0,0,0); padding: 36px; border-radius: 5px 5px 0 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 1;">
+      <!--[if gte mso 9]><v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='width:600px;height:200px;'><v:fill type='tile' src='${hero-image}' color='#ffffff'/><v:textbox inset="0px, 0px, 15px, 0px"><![endif]--> 
         <h1 style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff; font-size: 28px; padding: 0 36px;">${hero-title}</h1>
         <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">${hero-subtitle}</p>
+     <!--[if gte mso 9]></v:textbox></v:rect><![endif]-->
       </td>
     </tr>
   </tbody>
@@ -419,6 +421,28 @@ BUTTON
 
 <!--
 =====================
+IMAGE
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="basic-image" mktoname="Basic Image" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 0 18px;">
+        <div class="mktoImg" id="exampleImg" mktoName="Example Image" mktoImgLink="http://www.marketo.com">
+          <a><img class="img-max" src="//unsplash.it/600/200"></a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/IMAGE
+=====================
+-->
+
+<!--
+=====================
 TWO BUTTONS
 =====================
 -->
@@ -460,6 +484,69 @@ TWO BUTTONS
 <!--
 =====================
 /TWO BUTTONS
+=====================
+-->
+
+<!--
+=====================
+CALLOUT - Light
+=====================
+-->
+<table mktoaddbydefault="false" class="mktoModule" id="callout-light" mktoname="Light Callout" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 0 18px;">
+  <tbody>
+    <tr>
+      <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 36px; text-align: center; background-color: #f0f0f0; background-image: linear-gradient(#f0f0f0, #eeeeee);">
+        <p style="font-size: 22px; line-height: 1; font-weight: bold;">${callout-title}</p>
+        <p>${callout-text}</p>
+        <!--
+        =====================
+        BUTTON
+        =====================
+        -->
+        <table mktoaddbydefault="false" class="mktoModule" id="local-button-container" mktoname="Button" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+          <tbody>
+            <tr>
+              <td align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                <table border="0" cellspacing="0" cellpadding="0" class="button-table" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                  <tbody>
+                    <tr>
+                      <td class="mktEditable" id="local-button" mktoname="Button" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0;">
+                        <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${button-link}" target="_blank">${button-text}</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--
+        =====================
+        /BUTTON
+        =====================
+        -->
+      </td>
+    </tr>
+    <tr>
+      <!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/CALLOUT - Light
 =====================
 -->
 
