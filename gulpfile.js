@@ -4,7 +4,6 @@ var gulp = require('gulp');
 // Include plugins
 var fileinclude = require('gulp-file-include');
 var rename = require('gulp-rename');
-var images = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;

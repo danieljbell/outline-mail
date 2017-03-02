@@ -44,7 +44,6 @@ p {
   color: rgb(0, 0, 0) !important;
 }
 .button-arrow.email-button:hover {
-  color: rgb(255, 255, 255) !important;
   background-color: #ffffff !important;
   border-color: #ffffff !important;
   box-shadow: inset 0 -36px 0 #42b0d8 !important;
@@ -97,7 +96,7 @@ p {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }
-  .hero {
+  .hero td {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }

@@ -82,7 +82,6 @@ p {
   color: rgb(0, 0, 0) !important;
 }
 .button-arrow.email-button:hover {
-  color: rgb(255, 255, 255) !important;
   background-color: #ffffff !important;
   border-color: #ffffff !important;
   box-shadow: inset 0 -36px 0 #42b0d8 !important;
@@ -135,7 +134,7 @@ p {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }
-  .hero {
+  .hero td {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }
@@ -167,22 +166,14 @@ p {
 
   <!--[if mso]>
     <style type="text/css">
-      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
-        font-family: Helvetica, Arial, sans-serif !important;
+      html, body, table, tbody, tr, td, div, p, a, h1, ul, li, font, span, strong {
+        font-family: Arial, sans-serif !important;
       }
     </style>
   <![endif]-->
 </head>
 
 <body style="height: 100%; margin: 0 !important; padding: 0 !important;">
-
-  <!--[if mso]>
-    <style type="text/css">
-      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
-        font-family: Helvetica, Arial, sans-serif !important;
-      }
-    </style>
-  <![endif]-->
 
   <!-- Background -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -272,11 +263,49 @@ HERO
 <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
   <tbody>
     <tr>
-      <td class="mktEditable hero" id="hero" mktoname="Hero" align="top" bgcolor="#333333" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #333333; color: #ffffff; background-image: url(${hero-image}); background-position: center; background-size: cover; background-repeat: no-repeat; font-family: 'Source Sans Pro', Helvetica, Arial sans-serif; font-size: 18px; line-height: 22px; text-align: center; color: #ffffff !important; text-shadow: 2px 2px 3px rgb(0,0,0); padding: 36px; border-radius: 5px 5px 0 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 1;">
-      <!--[if gte mso 9]><v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='width:600px;height:200px;'><v:fill type='tile' src='${hero-image}' color='#ffffff'/><v:textbox inset="0px, 0px, 15px, 0px"><![endif]--> 
-        <h1 style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff; font-size: 28px; padding: 0 36px;">${hero-title}</h1>
-        <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">${hero-subtitle}</p>
-     <!--[if gte mso 9]></v:textbox></v:rect><![endif]-->
+      <td class="mktEditable hero" id="hero" mktoname="Hero" align="top" bgcolor="#333333" style="box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #333333; color: #ffffff; background-image: url(http://unsplash.it/700/466); background-position: center; background-size: cover; background-repeat: no-repeat; font-family: 'Source Sans Pro', Helvetica, Arial sans-serif; font-size: 18px; line-height: 22px; text-align: center; color: #ffffff !important; text-shadow: 2px 2px 3px #444; border-radius: 5px 5px 0 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 1;">
+      <!--[if mso]><v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='width:600px;height:200px;'><v:fill type='tile' src='http://unsplash.it/700/466' color='#ffffff'/><v:textbox inset="0px, 0px, 15px, 0px"><![endif]-->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+        <tbody>
+          <tr>
+            <!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+          </tr>
+          <tr>
+            <td style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff;">
+              <h1 style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff; font-size: 28px; padding: 0px 36px;">${hero-title}</h1>
+              <p style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">${hero-subtitle}</p>
+            </td>
+          </tr>
+          <tr>
+            <!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+          </tr>
+        </tbody>
+      </table>
+     <!--[if mso]></v:textbox></v:rect><![endif]-->
       </td>
     </tr>
   </tbody>
@@ -297,7 +326,7 @@ HERO
 SPACER
 =====================
 -->
-  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
   </td>
 <!--
 =====================
@@ -317,7 +346,7 @@ SALUTATION
   <table mktoaddbydefault="false" class="mktoModule" id="salutation-container" mktoname="Salutation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
     <tbody>
       <tr>
-        <td class="mktEditable container" id="salutation" mktoname="Salutation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 26px; line-height: 1; padding: 0 36px;">
+        <td class="mktEditable container" id="salutation" mktoname="Salutation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 26px; line-height: 1; padding: 0 36px;">
           <p style="font-weight: bold; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 24px; line-height: 1; padding: 0 0 18px; margin: 0;">${salutation-text},</p>
         </td>
       </tr>
@@ -337,7 +366,7 @@ BASIC PARAGRAPH
 <table mktoaddbydefault="false" class="mktoModule" id="basic-paragraph-container" mktoname="Basic Paragraph" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
   <tbody>
     <tr>
-      <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> ${basic-paragraph-text} </td>
+      <td class="container" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> ${basic-paragraph-text} </td>
     </tr>
   </tbody>
 </table>
@@ -355,7 +384,7 @@ EDITABLE PARAGRAPH
 <table mktoaddbydefault="false" class="mktoModule" id="editable-paragraph-container" mktoname="Editable Paragraph" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
   <tbody>
     <tr>
-      <td class="mktEditable container" id="editable-paragraph" mktoname="Editable Paragraph" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> Editable Basic Paragraph </td>
+      <td class="mktEditable container" id="editable-paragraph" mktoname="Editable Paragraph" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px 16px;"> Editable Basic Paragraph </td>
     </tr>
   </tbody>
 </table>
@@ -370,15 +399,15 @@ EDITABLE PARAGRAPH
 DIVIDER
 =====================
 -->
-<table class="mktoModule" id="divider" mktoname="Section Divider" mktoaddbydefault="false" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+<table class="mktoModule" id="divider" mktoname="Section Divider" mktoaddbydefault="false" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
   <tbody>
     <tr>
-      <td class="container" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 36px;" bgcolor="#ffffff" align="center">
+      <td class="container" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 36px 18px;" bgcolor="#ffffff" align="center">
         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
           <tbody>
             <tr>
               <td align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 1px; line-height: 1px;">
-                <hr height="1" style="margin: 0 0 1rem; border-top: 1px solid rgb(204, 204, 204); height: 1px; border: none; color: #cccccc; background-color: #cccccc;" />
+                <hr height="1" style="margin: 18px 0; border-top: 1px solid rgb(204, 204, 204); height: 1px; border: none; color: #cccccc; background-color: #cccccc;" />
               </td>
             </tr>
           </tbody>
@@ -430,8 +459,8 @@ IMAGE
   <tbody>
     <tr>
       <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 0 18px;">
-        <div class="mktoImg" id="exampleImg" mktoName="Example Image" mktoImgLink="http://www.marketo.com">
-          <a><img class="img-max" src="//unsplash.it/600/200"></a>
+        <div class="mktoImg" id="exampleImg" mktoName="Example Image" mktoImgLink="https://octiv.com">
+          <a><img class="img-max" src="http://unsplash.it/600/200"></a>
         </div>
       </td>
     </tr>
@@ -498,8 +527,8 @@ CALLOUT - Light
   <tbody>
     <tr>
       <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 36px; text-align: center; background-color: #f0f0f0; background-image: linear-gradient(#f0f0f0, #eeeeee);">
-        <p style="font-size: 22px; line-height: 1; font-weight: bold;">${callout-title}</p>
-        <p>${callout-text}</p>
+        <p style="font-size: 22px; line-height: 1; font-weight: bold; margin-bottom: 18px;">${callout-title}</p>
+        <p style="margin-bottom: 18px;">${callout-text}</p>
         <!--
         =====================
         BUTTON
@@ -535,7 +564,7 @@ CALLOUT - Light
 SPACER
 =====================
 -->
-  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
   </td>
 <!--
 =====================
@@ -561,8 +590,8 @@ CLOSING
     <tbody>
       <tr>
         <td class="container" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 0 36px;">
-          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 1rem; ">${closing-text},</p>
-          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 1rem; margin-bottom: 0;"><strong style="color: #ed4c06;">${closing-name}</strong><br /><em>${closing-title}</em></p>
+          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 18px; ">${closing-text},</p>
+          <p style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box !important; margin-bottom: 18px; margin-bottom: 0;"><strong style="color: #ed4c06;">${closing-name}</strong><br /><em>${closing-title}</em></p>
         </td>
       </tr>
     </tbody>
@@ -581,7 +610,7 @@ CLOSING
 SPACER
 =====================
 -->
-  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;">
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
   </td>
 <!--
 =====================
@@ -614,7 +643,7 @@ SPACER
                         <!-- content left -->
                         <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
                           <tr>
-                            <td class="center-mobile" style="font-size: 0.75em; color: #5F6369; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="left">
+                            <td class="center-mobile" style="font-size: 14px; line-height: 18px; color: #5F6369; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="left">
                               <p><strong>Octiv</strong><br>54 Monument Circle, Suite 200<br>Indianapolis, IN 46240<br>317.550.0148</p>
                             </td>
                           </tr>
@@ -623,7 +652,7 @@ SPACER
                         <!-- content right -->
                         <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
                           <tr>
-                            <td class="center-mobile" style="font-size: 0.75em; color: #5f6369; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="right">
+                            <td class="center-mobile" style="font-size: 14px; line-height: 18px; color: #5f6369; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="right">
                               <p>© 2017 Octiv. All rights reserved.<br><a href="#" style="color: #5f6369; font-weight: normal;">View Online</a><br><a href="#" style="color: #5f6369; font-weight: normal;">Update Subscription Preferences</a><br><a href="#" style="color: #5f6369; font-weight: normal;">Unsubscribe</a></p>
                             </td>
                           </tr>
