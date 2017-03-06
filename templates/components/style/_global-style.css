@@ -42,6 +42,7 @@ p {
   background-color: rgb(255, 255, 255) !important;
   border-color: rgb(255, 255, 255) !important;
   color: rgb(0, 0, 0) !important;
+  text-shadow: none !important;
 }
 .button-arrow.email-button:hover {
   background-color: #ffffff !important;
