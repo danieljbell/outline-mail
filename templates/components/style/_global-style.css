@@ -33,6 +33,9 @@ OCTIV STYLES
 p {
   margin: 0 0 18px;
 }
+a {
+  color: #ed4c06;
+}
 
 .email-button:hover {
   background-color: rgb(190, 61, 5) !important;
