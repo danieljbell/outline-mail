@@ -126,4 +126,15 @@ a {
   .button-group .button-two-container {
     text-align: center !important;
   }
+  .salutation-image {
+    text-align: center !important;
+    width: 100% !important;
+    float: none !important;
+  }
+  .salutation-image td {
+    padding-bottom: 15px !important;
+  }
+  #closing-with-headshot p {
+    text-align: center;
+  }
 }
