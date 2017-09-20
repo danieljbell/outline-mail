@@ -2,7 +2,10 @@
 View full documentation at: https://octiv.com/get-started.html
 
 ## Dependencies
-Node.js
+Check each respective dependencies on proper installation to run this project.
+
+- [Node.js](https://nodejs.org/en/)
+- [Gulp](https://gulpjs.com/)
 
 ## Quick Start
 - Clone the repository  
