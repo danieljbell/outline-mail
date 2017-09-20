@@ -76,6 +76,22 @@ a {
   color: #ed4c06;
 }
 
+.card {
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 15px #dbdbdb;
+  margin-bottom: 20px !important;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card img {
+  width: 100% !important;
+}
+
 .email-button:hover {
   background-color: rgb(190, 61, 5) !important;
   border-color: rgb(190, 61, 5) !important;
@@ -87,8 +103,8 @@ a {
   text-shadow: none !important;
 }
 .button-arrow.email-button:hover {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
   box-shadow: inset 0 -36px 0 #42b0d8 !important;
 }
 .button-group .button-one-container {
@@ -103,6 +119,17 @@ a {
 @media only screen and (max-width: 599px) {
   .content-table {
     width: 100% !important;
+  }
+  .mobile-block {
+    display: block;
+    text-align: center !important;
+  }
+  .mobile-block a {
+    display: block !important;
+    text-align: center;
+  }
+  .mobile-block a.button-arrow {
+    display: inline-block !important;
   }
   img[class="img-max"] {
     width: 100% !important;

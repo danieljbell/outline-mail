@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet" type="text/css" />
+
+<!-- Marketo Variables -->
+  <meta class="mktoString" id="email-title" mktoname="Email Title" default="Octiv Powers Documents" />
+  <meta class="mktoString" id="email-type" mktoname="Email Type" default="Email Type" />
+  <meta class="mktoImg" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="preheader-text" mktoname="PreHeader Text" default="Octiv Powers Documents" />
+  <meta class="mktoString" id="hero-title" mktoname="Hero Title" default="SaaS Buyer Journey Timeline" />
+  <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Together with Forrester, Octiv has mapped its own buyer journey." />
+  <meta class="mktoString" id="salutation-text" mktoname="Salutation Text" default="{{Lead.First Name}}" />
+  <meta class="mktoString" id="basic-paragraph-text" mktoname="Basic Paragraph Text" mktomodulescope="true" default="Thank you for downloading our whitepaper!" />
+  <meta class="mktoString" id="button-text" mktoname="Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="button-link" mktoname="Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="primary-button-text" mktoname="Primary Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="primary-button-link" mktoname="Primary Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="secondary-button-text" mktoname="Secondary Button Text" mktomodulescope="true" default="Download It Now!" />
+  <meta class="mktoString" id="secondary-button-link" mktoname="Secondary Button Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="callout-title" mktoname="Callout Title" mktomodulescope="true" default="Callout Title" />
+  <meta class="mktoString" id="callout-text" mktoname="Callout Text" mktomodulescope="true" default="Callout Text" />
+  <meta class="mktoString" id="basic-image-link" mktoname="Basic Image Link" mktomodulescope="true" default="#0" />
+  <meta class="mktoString" id="basic-image" mktoname="Basic Image" mktomodulescope="true" default="https://unsplash.it/600/200" />
+  <meta class="mktoImg" id="closing-image" mktoname="Closing Image" mktomodulescope="true" default="http://lp.octiv.com/rs/625-MXY-689/images/david-kerr.png" />
+  <meta class="mktoString" id="closing-text" mktoname="Closing Text" mktomodulescope="true" default="Regards" />
+  <meta class="mktoString" id="closing-name" mktoname="Closing Name" mktomodulescope="true" default="Daniel Bell" />
+  <meta class="mktoString" id="closing-title" mktoname="Closing Title" mktomodulescope="true" default="Interactive Designer" />
+<!-- /Marketo Variables -->
+
+<!-- Other Meta -->
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- /Other Meta -->
+
+<title>${email-title}</title>
+
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+#outlook a { padding: 0; }
+.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode:bicubic; }
+/* RESET STYLES */
+body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+/* Remove margin on email wrapper in Android 4.4 KitKat */
+/* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+/* Remove ios blue links */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/*
+==============================
+OCTIV STYLES
+==============================
+*/
+
+
+/* TYPOGRAPHY */
+p {
+  margin: 0 0 18px;
+}
+a {
+  color: #ed4c06;
+}
+
+.card {
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 15px #dbdbdb;
+  margin-bottom: 20px !important;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card img {
+  width: 100% !important;
+}
+
+.email-button:hover {
+  background-color: rgb(190, 61, 5) !important;
+  border-color: rgb(190, 61, 5) !important;
+}
+.white.email-button:hover {
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+  text-shadow: none !important;
+}
+.button-arrow.email-button:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: inset 0 -36px 0 #42b0d8 !important;
+}
+.button-group .button-one-container {
+  text-align: right;
+}
+.button-group .button-two-container {
+  text-align: left;
+}
+.button-group .email-button {
+  display: inline-block !important;
+}
+@media only screen and (max-width: 599px) {
+  .content-table {
+    width: 100% !important;
+  }
+  .mobile-block {
+    display: block;
+    text-align: center !important;
+  }
+  .mobile-block a {
+    display: block !important;
+    text-align: center;
+  }
+  .mobile-block a.button-arrow {
+    display: inline-block !important;
+  }
+  img[class="img-max"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+  table[class="mobile-button-wrap"] {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  a[class="mobile-button"] {
+    width: 80% !important;
+    padding: 8px !important;
+    border: 0 !important;
+  }
+  .mobile-align-center {
+    text-align: center !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .center-mobile {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .button-table {
+    width: 100%;
+  }
+  .spacer {
+    height: 18px !important;
+  }
+  .callout p {
+    padding: 0 !important;
+  }
+  .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .hero td {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .hero h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hero p {
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .button-group .button-one-container {
+    text-align: center !important;
+    padding-bottom: 9px !important;
+  }
+  .button-group .button-one-container .email-button {
+    display: block !important;
+  }
+  .button-group .button-two-container {
+    text-align: center !important;
+  }
+  .salutation-image {
+    text-align: center !important;
+    width: 100% !important;
+    float: none !important;
+  }
+  .salutation-image td {
+    padding-bottom: 15px !important;
+  }
+  #closing-with-headshot p {
+    text-align: center;
+  }
+}
+
+    .client-success-logos img {
+      width: 100% !important;
+      box-shadow: 0 3px 15px #222222;
+    }
+  </style>
+
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+</head>
+
+<body style="height: 100%; margin: 0 !important; padding: 0 !important;">
+
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#444444" style="background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/bg-pattern-light.png), linear-gradient(#757A82,#474A4F); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
+
+<!-- Header full -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <table style="min-width: 320px;" class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 54px 0px 18px 0px;" align="left">
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                    <tr>
+                      <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3;">
+                        <a href="https://octiv.com" target="_blank">
+                          <img style="display: block" src="/img/Octiv-Logo-White.png" width="185" height="40" border="0" alt="Octiv" class="center-mobile">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                    <tr>
+                      <td style="text-align: right; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #ffffff; font-size: 24px; line-height: 1.3;" class="center-mobile">
+                        October 2017
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <!-- /Two column -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Header full -->
+
+<!--
+=====================
+EMAIL CONTAINER
+=====================
+-->
+  <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.15);">
+    <tbody>
+      <tr>
+        <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px;">
+          <!--
+=====================
+HERO WITH NOTCH
+=====================
+-->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td class="mktEditable hero" id="hero" mktoname="Hero" align="top" bgcolor="#333333" style="box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #333333; color: #ffffff; background-image: url(http://unsplash.it/700/466); background-position: center; background-size: cover; background-repeat: no-repeat; font-family: 'Source Sans Pro', Helvetica, Arial sans-serif; font-size: 18px; line-height: 22px; text-align: center; color: #ffffff !important; text-shadow: 2px 2px 3px #444; border-radius: 5px 5px 0 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 1;">
+      <!--[if mso]><v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='width:600px;height:200px;'><v:fill type='tile' src='http://unsplash.it/700/466' color='#ffffff'/><v:textbox inset="0px, 0px, 15px, 0px"><![endif]-->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+        <tbody>
+          <tr>
+            <!--
+=====================
+SPACER
+=====================
+-->
+  <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 36px;" height="36">
+  </td>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+          </tr>
+          <tr>
+            <td style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff;">
+              <h1 style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff; font-size: 28px; padding: 0px 36px;">The Platform Report</h1>
+              <p style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">Some sort of fun text to set up the email newsletter</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+              <div style="background-color: #ffffff; border: 1px solid #cccccc; border-bottom: 0; border-radius: 3px 3px 0px 0px;">&nbsp;</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     <!--[if mso]></v:textbox></v:rect><![endif]-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/HERO WITH NOTCH
+=====================
+-->
+
+          <!--
+=====================
+HERO WITH NOTCH
+=====================
+-->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td style="padding-left: 20px; padding-right: 20px;">
+        <div style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #f0f0f0); border: 1px solid #cccccc; border-top: 0; border-radius: 0px 0px 3px 3px;">
+          <!--
+          =====================
+          TWO BUTTONS
+          =====================
+          -->
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+              <tbody>
+                <tr>
+                  <td class="container" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 0 20px;">
+
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="32%" align="left" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                    <tbody>
+                      <tr>
+                        <td class="mktEditable" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
+                          <a href="#0" target="_blank"><img src="http://fillmurray.com/700/466" alt="" style="height: auto !important; width: 100% !important; display: block;" width="200" height="113"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- /content left -->
+
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="65%" align="right" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                    <tbody>
+                      <tr>
+                        <td class="mktEditable" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
+                          <h3 style="margin-top: 0; margin-bottom: 0;"><a href="#0" target="_blank" style="text-decoration: none;">2017 Fall Release</a></h3>
+                          <p>Octiv marked it’s seasonal Fall release on September 12th, with a collection of feature enhancements.</p>
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+                            <tbody>
+                              <tr>
+                                <td class="content-table mobile-block mktEditable" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
+                                  <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: inline-block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${primary-button-link}" target="_blank">View Webinar</a>
+                                </td>
+                                <td class="content-table mobile-block mktEditable" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
+                                  <a class="email-button button-arrow" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: transparent;border-top: 9px solid transparent;border-right: 18px solid transparent;border-bottom: 9px solid transparent;border-left: 18px solid transparent;display: inline-block;color: #000000;font-size: 18px;font-weight: normal;line-height: 24px;text-decoration: none;border-radius: 5px; box-shadow: inset 0 -3px 0 #42b0d8; padding: 0 0 3px; transition: all 200ms ease-out;" href="${secondary-button-link}" target="_blank">Release Center &nbsp;></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- /content right -->
+
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <!-- /Two column -->
+          <!--
+          =====================
+          /TWO BUTTONS
+          =====================
+          -->
+
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+=====================
+/HERO WITH NOTCH
+=====================
+-->
+
+        </td>
+      </tr>
+      <tr>
+        <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; text-align: center; text-transform: uppercase; padding-top: 20px;">
+          <h2>The Latest And Greatest</h2>
+        </td>
+      </tr>
+      <tr>
+        <td class="mktoContainer" id="template-wrapper" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; font-size: 18px; line-height: 22px;">
+          <!--
+==============================
+TWO UP -- CARD
+==============================
+-->
+<table mktoaddbydefault="true" class="mktoModule" id="two-cards" mktoname="Two Cards" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tr>
+    <td style="padding: 0;" bgcolor="#ffffff" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 0 20px 0 20px;" align="center" valign="top">
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table card" border="0" cellpadding="0" cellspacing="0" width="47%" align="left">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <a href="#" target="_blank">
+                                <img style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://unsplash.it/700/466" alt="Outline Mail" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 15px 15px 0px; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; font-weight: bold;" align="left">
+                              <div style="display: inline-block; background-color: #ed4c06; padding: 5px; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: bold; line-height: 1.1; font-weight: bold; text-transform: uppercase; border-radius: 3px" align="left">
+                                Downloads
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 5px 15px 5px; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; font-weight: bold;" align="left">
+                              <a href="#0">The Case for Digital Document Generation</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.3; padding: 0 15px 15px;" align="left">
+                              See why digital document generation is helping sales teams meet their clients’ needs with speed and accuracy.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.3; padding: 0 15px 15px;" align="left">
+                              <a class="email-button button-arrow" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: transparent;border-top: 9px solid transparent;border-right: 18px solid transparent;border-bottom: 9px solid transparent;border-left: 0px solid transparent;display: inline-block;color: #000000;font-size: 16px;font-weight: normal;line-height: 1.3;text-decoration: none;border-radius: 5px; box-shadow: inset 0 -3px 0 #42b0d8; padding: 0 0 3px; transition: all 200ms ease-out;" href="${secondary-button-link}" target="_blank">Learn More &nbsp;></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table card" border="0" cellpadding="0" cellspacing="0" width="47%" align="right">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <a href="#" target="_blank">
+                                <img style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://fillmurray.com/700/466" alt="Outline Mail" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 15px 15px 0px; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; font-weight: bold;" align="left">
+                              <div style="display: inline-block; background-color: #42b0d8; padding: 5px; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: bold; line-height: 1.1; font-weight: bold; text-transform: uppercase; border-radius: 3px" align="left">
+                                Webinar
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 5px 15px 5px; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; font-weight: bold;" align="left">
+                              <a href="#0">The Future of Work Webinar</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.3; padding: 0 15px 15px;" align="left">
+                              Join Octiv, Velocify and DocuSign for a discussion about how to future-proof your employees and boost your bottom line.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.3; padding: 0 15px 15px;" align="left">
+                              <a class="email-button button-arrow" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: transparent;border-top: 9px solid transparent;border-right: 18px solid transparent;border-bottom: 9px solid transparent;border-left: 0px solid transparent;display: inline-block;color: #000000;font-size: 16px;font-weight: normal;line-height: 1.3;text-decoration: none;border-radius: 5px; box-shadow: inset 0 -3px 0 #42b0d8; padding: 0 0 3px; transition: all 200ms ease-out;" href="${secondary-button-link}" target="_blank">Learn More &nbsp;></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <!-- /Two column -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--
+==============================
+/TWO UP -- CARD
+==============================
+--!>
+          <br />
+          <br />
+          <table mktoaddbydefault="false" class="mktoModule" id="client-success-container" mktoname="Client Success Section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tbody>
+    <tr>
+      <td style="background-image: url(http://fillmurray.com/700/466); background-size: cover; background-position: center center; padding: 0px; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1;" align="left">
+        <table mktoaddbydefault="false" class="mktoModule" id="client-success-container" mktoname="Client Success Section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+          <tbody>
+            <tr>
+              <td style="color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1; padding: 40px 20px; text-align: center;" align="left">
+                <h2 style="margin: 0; padding: 0; text-shadow: 2px 2px 4px #333333;">Client Success Stories</h2>
+                <p style="margin: 0; padding: 0; text-shadow: 2px 2px 2px #333333;">See what others are doing with Octiv and how they are winning.</p>
+                <!-- 
+                ==============================
+                THREE COLUMN 
+                ==============================
+                -->
+                <table class="client-success-logos" border="0" cellpadding="0" cellspacing="0" width="100%" >
+                  <tr>
+                    <td style="padding-top: 10px;">
+                      <!-- Column 1 -->
+                      <!--[if mso]><table border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="200" align="left"><![endif]-->
+                      <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                        <tr>
+                          <td style="padding: 0 8px 0 8px" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td align="left">
+                                  <a href="#" target="_blank">
+                                    <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" border="0">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Column 1 -->
+                      <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                      <!-- Column 2 -->
+                      <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                        <tr>
+                          <td style="padding: 0 8px 0 8px" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td align="left">
+                                  <a href="#" target="_blank">
+                                    <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" border="0">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Column 2 -->
+                      <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                      <!-- Column 3 -->
+                      <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="right">
+                        <tr>
+                          <td style="padding: 0 8px 0 8px" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td align="left">
+                                  <a href="#" target="_blank">
+                                    <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" border="0">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Column 3 -->
+                      <!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!-- 
+                ==============================
+                /THREE COLUMN 
+                ==============================
+                -->
+              </td>
+            </tr>
+          </tbody>
+          </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<!--
+=====================
+/EMAIL CONTAINER
+=====================
+-->
+
+        <!-- footer -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 0 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0;" align="center" valign="top">
+                  <!-- Two column -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <!-- content left -->
+                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                          <tr>
+                            <td class="center-mobile" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.65); font-size: 0.75em; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal; opacity: 0.65;" align="left">
+                              <p><strong>Octiv</strong><br>54 Monument Circle, Suite 700<br>Indianapolis, IN 46240<br>317.550.0148</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /content left -->
+                        <!-- content right -->
+                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                          <tr>
+                            <td class="center-mobile" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.65); opacity: 0.65; font-size: 0.75em; color: #ffffff; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-weight: normal;" align="right">
+                              <p>© 2017 Octiv. All rights reserved.<br><a href="{{system.viewAsWebpageLink}}" style="color: #ffffff;">View Online</a><br><a href="http://lp.octiv.com/SubscriptionManagement.html" style="color: #ffffff;">Update Subscription Preferences</a><br><a href="{{system.unsubscribeLink}}" style="color: #ffffff;">Unsubscribe</a></p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /content right -->
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Two column -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /footer -->
+
+
+        </td>
+      </tr>
+    </table>
+  <!-- /Background -->
+
+</body>
+</html>
