@@ -1,6 +1,3 @@
-## Full Documentation
-View full documentation at: https://octiv.com/get-started.html
-
 ## Dependencies
 Check each respective dependencies on proper installation to run this project.
 
