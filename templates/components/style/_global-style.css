@@ -78,12 +78,17 @@ a {
   display: inline-block !important;
 }
 @media only screen and (max-width: 599px) {
-  .content-table {
+  [class*="content-table"] {
     width: 100% !important;
+  }
+  .employee-highlight img {
+    width: 100% !important;
+  }
+  .mobile-text-center {
+    text-align: center !important;
   }
   .mobile-block {
     display: block;
-    text-align: center !important;
   }
   .mobile-block a {
     display: block !important;
