@@ -2,20 +2,37 @@
 <html lang="en">
 <head>
   @@include('meta/_meta.html')
+  <meta class="mktoImg" id="notch-image" mktoname="Notch Featured Image" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="notch-headline" mktoname="Notch Headline" default="Insert Notch Headline" />
+  <meta class="mktoString" id="notch-body-copy" mktoname="Notch Body Copy" default="Insert Notch Body Copy" />
+  <meta class="mktoString" id="notch-primary-button-text" mktoname="Notch Primary Button Text" default="Primary Text" />
+  <meta class="mktoString" id="notch-primary-button-link" mktoname="Notch Primary Button Link" default="https://octiv.com" />
+  <meta class="mktoString" id="notch-secondary-button-text" mktoname="Notch Secondary Button Text" default="Secondary Text" />
+  <meta class="mktoString" id="notch-secondary-button-link" mktoname="Notch Secondary Button Link" default="https://octiv.com" />
+  <meta class="mktoImg" id="left-card-image" mktoname="Left Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="left-card-headline" mktoname="Left Card Headline" mktomodulescope="true" default="Insert Left Card Headline" />
+  <meta class="mktoString" id="left-card-body-copy" mktoname="Left Card Body Copy" mktomodulescope="true" default="Insert Left Card Body Copy" />
+  <meta class="mktoString" id="left-card-button-text" mktoname="Left Card Button Text" default="Learn More" />
+  <meta class="mktoString" id="left-card-button-link" mktoname="Left Card Button Link" default="https://octiv.com" />
+  <meta class="mktoImg" id="right-card-image" mktoname="Right Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="right-card-headline" mktoname="Right Card Headline" mktomodulescope="true" default="Insert Right Card Headline" />
+  <meta class="mktoString" id="right-card-body-copy" mktoname="Right Card Body Copy" mktomodulescope="true" default="Insert Right Card Body Copy" />
+  <meta class="mktoString" id="right-card-button-text" mktoname="Right Card Button Text" default="Learn More" />
+  <meta class="mktoString" id="right-card-button-link" mktoname="Right Card Button Link" default="https://octiv.com" />
   <style type="text/css">
     @@include('style/_global-style.css')
-    .client-success-top-td {
+    .client-success-logos {
       background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/customer-success-bg.png);
-      padding: 30px 0;
       color: #ffffff !important;
     }
-    .client-success-top-td h2 {
+    .client-success-logos-container {
+      padding: 30px 0 !important;
+    }
+    [class*="client-success-top-td"] h2 {
       text-shadow: 3px 3px 4px #222222; 
-      color: #ffffff !important;
     }
     .client-success-top-td p {
       text-shadow: 3px 3px 2px #222222;
-      color: #ffffff !important;
     }
     .client-success-logos td,
     .client-success-logos table td {

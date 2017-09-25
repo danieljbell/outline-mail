@@ -9,7 +9,7 @@
   <meta class="mktoImg" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
   <meta class="mktoString" id="preheader-text" mktoname="PreHeader Text" default="Octiv Powers Documents" />
   <meta class="mktoString" id="hero-title" mktoname="Hero Title" default="SaaS Buyer Journey Timeline" />
-  <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Together with Forrester, Octiv has mapped its own buyer journey." />
+  <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Some sort of fun text to set up the email newsletter." />
   <meta class="mktoString" id="salutation-text" mktoname="Salutation Text" default="{{Lead.First Name}}" />
   <meta class="mktoString" id="basic-paragraph-text" mktoname="Basic Paragraph Text" mktomodulescope="true" default="Thank you for downloading our whitepaper!" />
   <meta class="mktoString" id="button-text" mktoname="Button Text" mktomodulescope="true" default="Download It Now!" />
@@ -36,6 +36,23 @@
 
 <title>${email-title}</title>
 
+  <meta class="mktoImg" id="notch-image" mktoname="Notch Featured Image" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="notch-headline" mktoname="Notch Headline" default="Insert Notch Headline" />
+  <meta class="mktoString" id="notch-body-copy" mktoname="Notch Body Copy" default="Insert Notch Body Copy" />
+  <meta class="mktoString" id="notch-primary-button-text" mktoname="Notch Primary Button Text" default="Primary Text" />
+  <meta class="mktoString" id="notch-primary-button-link" mktoname="Notch Primary Button Link" default="https://octiv.com" />
+  <meta class="mktoString" id="notch-secondary-button-text" mktoname="Notch Secondary Button Text" default="Secondary Text" />
+  <meta class="mktoString" id="notch-secondary-button-link" mktoname="Notch Secondary Button Link" default="https://octiv.com" />
+  <meta class="mktoImg" id="left-card-image" mktoname="Left Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="left-card-headline" mktoname="Left Card Headline" mktomodulescope="true" default="Insert Left Card Headline" />
+  <meta class="mktoString" id="left-card-body-copy" mktoname="Left Card Body Copy" mktomodulescope="true" default="Insert Left Card Body Copy" />
+  <meta class="mktoString" id="left-card-button-text" mktoname="Left Card Button Text" default="Learn More" />
+  <meta class="mktoString" id="left-card-button-link" mktoname="Left Card Button Link" default="https://octiv.com" />
+  <meta class="mktoImg" id="right-card-image" mktoname="Right Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="right-card-headline" mktoname="Right Card Headline" mktomodulescope="true" default="Insert Right Card Headline" />
+  <meta class="mktoString" id="right-card-body-copy" mktoname="Right Card Body Copy" mktomodulescope="true" default="Insert Right Card Body Copy" />
+  <meta class="mktoString" id="right-card-button-text" mktoname="Right Card Button Text" default="Learn More" />
+  <meta class="mktoString" id="right-card-button-link" mktoname="Right Card Button Link" default="https://octiv.com" />
   <style type="text/css">
     /* CLIENT-SPECIFIC STYLES */
 #outlook a { padding: 0; }
@@ -210,18 +227,18 @@ a {
   }
 }
 
-    .client-success-top-td {
+    .client-success-logos {
       background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/customer-success-bg.png);
-      padding: 30px 0;
       color: #ffffff !important;
     }
-    .client-success-top-td h2 {
+    .client-success-logos-container {
+      padding: 30px 0 !important;
+    }
+    [class*="client-success-top-td"] h2 {
       text-shadow: 3px 3px 4px #222222; 
-      color: #ffffff !important;
     }
     .client-success-top-td p {
       text-shadow: 3px 3px 2px #222222;
-      color: #ffffff !important;
     }
     .client-success-logos td,
     .client-success-logos table td {
@@ -371,12 +388,16 @@ SPACER
           <tr>
             <td style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff;">
               <h1 style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; font-size: 28px; line-height: 1; margin: 0 0 1rem; padding: 0; color: #ffffff; font-size: 28px; padding: 0px 36px;">The Pulse</h1>
-              <p style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">Some sort of fun text to set up the email newsletter</p>
+              <p style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; margin-bottom: 1rem; color: #ffffff !important; font-size: 24px; line-height: 28px; padding: 0 54px;">${hero-subtitle}</p>
             </td>
           </tr>
           <tr>
-            <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-              <div style="background-color: #ffffff; border: 1px solid #cccccc; border-bottom: 0; border-radius: 3px 3px 0px 0px;">&nbsp;</div>
+            <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px; border-radius: 3px 3px 0px 0px;">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-radius: 3px 3px 0px 0px;">
+                <tr>
+                  <td style="background-color: #ffffff; border: 1px solid #cccccc; border-bottom: 0; border-radius: 3px 3px 0px 0px;">&nbsp;</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </tbody>
@@ -512,7 +533,7 @@ TWO UP -- CARD
                                       <tr>
                                         <td align="left">
                                           <a href="#" target="_blank">
-                                            <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://unsplash.it/700/466" alt="Outline Mail" border="0" width="272" height="153">
+                                            <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://placecage.com/272/153" alt="Outline Mail" border="0" width="272" height="153">
                                           </a>
                                         </td>
                                       </tr>
@@ -544,7 +565,7 @@ TWO UP -- CARD
                                       <tr>
                                         <td align="left">
                                           <a href="#" target="_blank">
-                                            <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://unsplash.it/700/466" alt="Outline Mail" border="0" width="272" height="153">
+                                            <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://placecage.com/272/153" alt="Outline Mail" border="0" width="272" height="153">
                                           </a>
                                         </td>
                                       </tr>
@@ -592,102 +613,124 @@ TWO UP -- CARD
 --!>
           <br />
           <br />
-          <table mktoaddbydefault="false" class="mktoModule" id="client-success-container" mktoname="Client Success Section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
-  <tbody>
-    <tr>
-      <td class="client-success-top-td" style="background-size: cover; background-position: center; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1;" align="left">
-        <h2 style="margin: 0; padding: 0; text-align: center; color: #000000;">Client Success Stories</h2>
-        <p style="margin: 0; padding: 0; text-align: center; color: #000000;">See what others are doing with Octiv and how they are winning.</p>
-        <!-- 
-        ==============================
-        THREE COLUMN 
-        ==============================
-        -->
-        <!-- Three up -->
-        <table class="client-success-logos" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <!-- 
+==============================
+CLIENT SUCCESS STORIES
+==============================
+-->
+<table class="client-success-logos" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ">
+  <tr>
+    <td class="client-success-logos-container" style="padding: 0;" bgcolor="#ffffff" align="center">
+      <!--[if mso]><v:rect xmlns:v='urn:schemas-microsoft-com:vml' fill='true' stroke='false' style='width:600px;height:250px;'><v:fill type='tile' src='http://unsplash.it/700/466' color='#ffffff'/><v:textbox inset="0px, 0px, 15px, 0px"><![endif]-->
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tbody>
           <tr>
-            <td style="padding: 32px 0 0 0;" bgcolor="#ffffff" align="center">
-              <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+            <td class="client-success-top-td" style="background-size: cover; background-position: center; color: #000000; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.1;" align="left">
+              <h2 style="margin: 0; padding: 0; text-align: center; color: #ffffff;">Client Success Stories</h2>
+              <p style="margin: 0; padding: 0; text-align: center; color: #ffffff;">See what others are doing with Octiv and how they are winning.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- 
+              ==============================
+              THREE COLUMN 
+              ==============================
+              -->
+              <!-- Three up -->
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top">
-                    <!-- Three column -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <td style="padding: 32px 0 0 0;" bgcolor="#ffffff" align="center">
+                    <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
                       <tr>
-                        <td>
-                          <!-- Column 1 -->
-                          <!--[if mso]><table border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="200" align="left"><![endif]-->
-                          <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                        <td align="center" valign="top">
+                          <!-- Three column -->
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                              <td style="padding: 0 8px 0 8px" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <td>
+                                <!-- Column 1 -->
+                                <!--[if mso]><table border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="200" align="left"><![endif]-->
+                                <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
                                   <tr>
-                                    <td align="left">
-                                      <a href="#" target="_blank">
-                                        <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/08/realync-featured-image.jpg" alt="Realync" border="0" width="168" height="110">
-                                      </a>
+                                    <td style="padding: 0 8px 0 8px" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td align="left">
+                                            <a href="#" target="_blank">
+                                              <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/08/realync-featured-image.jpg" alt="Realync" border="0" width="168" height="110">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
                                     </td>
                                   </tr>
                                 </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- /Column 1 -->
-                          <!--[if mso]></td><td width="200" align="left"><![endif]-->
-                          <!-- Column 2 -->
-                          <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
-                            <tr>
-                              <td style="padding: 0 8px 0 8px" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <!-- /Column 1 -->
+                                <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                                <!-- Column 2 -->
+                                <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
                                   <tr>
-                                    <td align="left">
-                                      <a href="#" target="_blank">
-                                        <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/07/ims-featured-image.jpg" alt="Indianapolis Motor Speedway" border="0" width="168" height="110">
-                                      </a>
+                                    <td style="padding: 0 8px 0 8px" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td align="left">
+                                            <a href="#" target="_blank">
+                                              <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/07/ims-featured-image.jpg" alt="Indianapolis Motor Speedway" border="0" width="168" height="110">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
                                     </td>
                                   </tr>
                                 </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- /Column 2 -->
-                          <!--[if mso]></td><td width="200" align="left"><![endif]-->
-                          <!-- Column 3 -->
-                          <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="right">
-                            <tr>
-                              <td style="padding: 0 8px 0 8px" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <!-- /Column 2 -->
+                                <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                                <!-- Column 3 -->
+                                <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="right">
                                   <tr>
-                                    <td align="left">
-                                      <a href="#" target="_blank">
-                                        <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/05/tmi-hospitality-featured.jpg" alt="TMI Hospitality" border="0" width="168" height="110">
-                                      </a>
+                                    <td style="padding: 0 8px 0 8px" valign="top">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                          <td align="left">
+                                            <a href="#" target="_blank">
+                                              <img class="img-max" style="display: block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; width: 168px; height: 110px;"  src="https://octiv.com/wp-content/uploads/2017/05/tmi-hospitality-featured.jpg" alt="TMI Hospitality" border="0" width="168" height="110">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
                                     </td>
                                   </tr>
                                 </table>
+                                <!-- /Column 3 -->
+                                <!--[if mso]></td></tr></table><![endif]-->
                               </td>
                             </tr>
                           </table>
-                          <!-- /Column 3 -->
-                          <!--[if mso]></td></tr></table><![endif]-->
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
+              <!-- /Three up -->
+              <!-- 
+              ==============================
+              /THREE COLUMN 
+              ==============================
+              -->
             </td>
           </tr>
-        </table>
-        <!-- /Three up -->
-        <!-- 
-        ==============================
-        /THREE COLUMN 
-        ==============================
-        -->
-      </td>
-    </tr>
-  </tbody>
+        </tbody>
+      </table>
+      <!--[if mso]></v:textbox></v:rect><![endif]-->
+    </td>
+  </tr>
 </table>
+<!-- 
+==============================
+/CLIENT SUCCESS STORIES
+==============================
+-->
           <br />
           <br />
           <!--
@@ -701,55 +744,56 @@ UPCOMING EVENTS
       <td style="padding: 0;" bgcolor="#ffffff" align="center">
         <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
           <tr>
-              <td class="container" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; padding: 0 0px 16px;">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tbody>
-                    <tr>
-                      <td width="50" style="vertical-align: top; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 5px;"><img src="http://lp.octiv.com/rs/625-MXY-689/images/calendar-icon.png" alt=""></td>
-                      <td style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 20px;">
-                        <h2 style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Upcoming Events</h2>
-                        <p style="margin: 0; padding: 0; font-size: 14px; line-height: 1.3;">Catch up and mark your calendars with the Relationship Management team on their monthly webinar series to review new enhancements, best practices, and featured document workflows.</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td class="container" style="background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/full-width-line.png); background-size: contain; background-repeat: no-repeat; background-position: center 32px; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; padding: 0 0px 16px;">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tbody>
-                    <tr>
-                      <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
-                        <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #42b0d8; border-radius: 50%; line-height: 1;">
-                          <strong style="display: inline-block; margin: 12px auto 0; color: #42b0d8;">Jun<br />8</strong>
-                        </div>
-                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #42b0d8;">July 2017 Tips &amp; Tricks</a>
-                      </td>
-                      <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
-                        <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #33ab40; border-radius: 50%; line-height: 1;">
-                          <strong style="display: inline-block; margin: 12px auto 0; color: #33ab40;">Aug<br />8</strong>
-                        </div>
-                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #33ab40;">August 2017 Tips &amp; Tricks</a>
-                      </td>
-                      <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
-                        <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #b949f5; border-radius: 50%; line-height: 1;">
-                          <strong style="display: inline-block; margin: 12px auto 0; color: #b949f5;">Sep<br />8</strong>
-                        </div>
-                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #b949f5;">September 2017 Tips &amp; Tricks</a>
-                      </td>
-                      <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
-                        <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #fac500; border-radius: 50%; line-height: 1;">
-                          <strong style="display: inline-block; margin: 12px auto 0; color: #fac500;">Oct<br />8</strong>
-                        </div>
-                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #fac500;">October 2017 Tips &amp; Tricks</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
+            <td class="container" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; padding: 0 0px 16px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td width="50" style="vertical-align: top; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 5px;"><img src="http://lp.octiv.com/rs/625-MXY-689/images/calendar-icon.png" alt=""></td>
+                    <td style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 20px;">
+                      <h2 style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Upcoming Events</h2>
+                      <p style="margin: 0; padding: 0; font-size: 14px; line-height: 1.3;">Catch up and mark your calendars with the Relationship Management team on their monthly webinar series to review new enhancements, best practices, and featured document workflows.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="container" style="background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/full-width-line.png); background-size: contain; background-repeat: no-repeat; background-position: center 32px; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; padding: 0 0px 16px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
+                      <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #42b0d8; border-radius: 50%; line-height: 1;">
+                        <strong style="display: inline-block; margin: 12px auto 0; color: #42b0d8;">Jun<br />8</strong>
+                      </div>
+                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #42b0d8;">July 2017 Tips &amp; Tricks</a>
+                    </td>
+                    <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
+                      <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #33ab40; border-radius: 50%; line-height: 1;">
+                        <strong style="display: inline-block; margin: 12px auto 0; color: #33ab40;">Aug<br />8</strong>
+                      </div>
+                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #33ab40;">August 2017 Tips &amp; Tricks</a>
+                    </td>
+                    <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
+                      <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #b949f5; border-radius: 50%; line-height: 1;">
+                        <strong style="display: inline-block; margin: 12px auto 0; color: #b949f5;">Sep<br />8</strong>
+                      </div>
+                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #b949f5;">September 2017 Tips &amp; Tricks</a>
+                    </td>
+                    <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
+                      <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #fac500; border-radius: 50%; line-height: 1;">
+                        <strong style="display: inline-block; margin: 12px auto 0; color: #fac500;">Oct<br />8</strong>
+                      </div>
+                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #fac500;">October 2017 Tips &amp; Tricks</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
           </tr>
         </table>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -786,7 +830,7 @@ LINK ROUNDUP
                       <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #42b0d8;">Adoption Tips</h4>
                       <ul style="margin: 0; padding: 0;">
                         <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Powerpoint &amp; Excel Doc</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Example User Guide</a></li>
+                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Example User Guide</a></li><li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
                       </ul>
                     </div>
                   </td>
@@ -802,6 +846,7 @@ LINK ROUNDUP
                       <ul style="margin: 0; padding: 0;">
                         <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Octiv Support</a></li>
                         <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Contact Billing</a></li>
+                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
                       </ul>
                     </div>
                   </td>
@@ -890,7 +935,7 @@ THREE UP -- HEADLINE CONTAINER
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="left" style="text-align: center;">
-                    <a href="#0"><img src="//placecage.com/200/125" alt="" style="width: 100%;"></a>
+                    <a href="#0"><img src="http://placecage.com/200/125" alt="" style="width: 100%;"></a>
                   </td>
                 </tr>
               </table>
@@ -906,7 +951,7 @@ THREE UP -- HEADLINE CONTAINER
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="left" style="text-align: center;">
-                    <a href="#0"><img src="//placecage.com/200/125" alt="" style="width: 100%;"></a>
+                    <a href="#0"><img src="http://placecage.com/200/125" alt="" style="width: 100%;"></a>
                   </td>
                 </tr>
               </table>
@@ -922,7 +967,7 @@ THREE UP -- HEADLINE CONTAINER
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="left" style="text-align: center;">
-                    <a href="#0"><img src="//placecage.com/200/125" alt="" style="width: 100%;"></a>
+                    <a href="#0"><img src="http://placecage.com/200/125" alt="" style="width: 100%;"></a>
                   </td>
                 </tr>
               </table>
@@ -962,8 +1007,8 @@ EMPLOYEE HIGHLIGHT
               <em>Connect with Sarah:</em>
             </td>
             <td style="padding-left: 10px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.3; color: #000000;">
-              <a href="#0" style="display: inline-block;"><img src="//placecage.com/23/23" alt=""></a>
-              <a href="#0" style="display: inline-block; padding-left: 5px;"><img src="//placecage.com/23/23" alt=""></a>
+              <a href="#0" style="display: inline-block;"><img src="http://lp.octiv.com/rs/625-MXY-689/images/BLUE-linkedin-icon--square.png" alt="LinkedIn Icon"></a>
+              <a href="#0" style="display: inline-block; padding-left: 5px;"><img src="http://lp.octiv.com/rs/625-MXY-689/images/BLUE-twitter-icon--square.png" alt="Twitter Icon"></a>
             </td>
           </tr>
         </table>
@@ -976,7 +1021,7 @@ EMPLOYEE HIGHLIGHT
 </table>
 <!--
 ===============================
-/THREE UP -- HEADLINE CONTAINER
+/EMPLOYEE HIGHLIGHT
 ===============================
 -->
         </td>
