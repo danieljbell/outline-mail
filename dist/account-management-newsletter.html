@@ -6,10 +6,10 @@
 <!-- Marketo Variables -->
   <meta class="mktoString" id="email-title" mktoname="Email Title" default="Octiv Powers Documents" />
   <meta class="mktoString" id="email-type" mktoname="Email Type" default="Email Type" />
-  <meta class="mktoImg" id="hero-image" mktoname="Hero Image URL" default="https://unsplash.it/700/466" />
+  <meta class="mktoImg" id="hero-image" mktoname="Background Image" default="https://unsplash.it/700/466" />
   <meta class="mktoString" id="preheader-text" mktoname="PreHeader Text" default="Octiv Powers Documents" />
-  <meta class="mktoString" id="hero-title" mktoname="Hero Title" default="SaaS Buyer Journey Timeline" />
-  <meta class="mktoString" id="hero-subtitle" mktoname="Hero Subtitle" default="Some sort of fun text to set up the email newsletter." />
+  <meta class="mktoString" id="hero-title" mktoname="Title" default="SaaS Buyer Journey Timeline" />
+  <meta class="mktoString" id="hero-subtitle" mktoname="Subtitle" default="Some sort of fun text to set up the email newsletter." />
   <meta class="mktoString" id="salutation-text" mktoname="Salutation Text" default="{{Lead.First Name}}" />
   <meta class="mktoString" id="basic-paragraph-text" mktoname="Basic Paragraph Text" mktomodulescope="true" default="Thank you for downloading our whitepaper!" />
   <meta class="mktoString" id="button-text" mktoname="Button Text" mktomodulescope="true" default="Download It Now!" />
@@ -36,13 +36,13 @@
 
 <title>${email-title}</title>
 
-  <meta class="mktoImg" id="notch-image" mktoname="Notch Featured Image" default="https://unsplash.it/700/466" />
-  <meta class="mktoString" id="notch-headline" mktoname="Notch Headline" default="Insert Notch Headline" />
-  <meta class="mktoString" id="notch-body-copy" mktoname="Notch Body Copy" default="Insert Notch Body Copy" />
-  <meta class="mktoString" id="notch-primary-button-text" mktoname="Notch Primary Button Text" default="Primary Text" />
-  <meta class="mktoString" id="notch-primary-button-link" mktoname="Notch Primary Button Link" default="https://octiv.com" />
-  <meta class="mktoString" id="notch-secondary-button-text" mktoname="Notch Secondary Button Text" default="Secondary Text" />
-  <meta class="mktoString" id="notch-secondary-button-link" mktoname="Notch Secondary Button Link" default="https://octiv.com" />
+  <meta class="mktoImg" id="notch-image" mktoname="Featured Image" default="https://unsplash.it/700/466" />
+  <meta class="mktoString" id="notch-headline" mktoname="Headline" default="Insert Notch Headline" />
+  <meta class="mktoString" id="notch-body-copy" mktoname="Body Copy" default="Insert Notch Body Copy" />
+  <meta class="mktoString" id="notch-primary-button-text" mktoname="Primary Button Text" default="Primary Text" />
+  <meta class="mktoString" id="notch-primary-button-link" mktoname="Primary Button Link" default="https://octiv.com" />
+  <meta class="mktoString" id="notch-secondary-button-text" mktoname="Secondary Button Text" default="Secondary Text" />
+  <meta class="mktoString" id="notch-secondary-button-link" mktoname="Secondary Button Link" default="https://octiv.com" />
   <meta class="mktoImg" id="left-card-image" mktoname="Left Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
   <meta class="mktoString" id="left-card-headline" mktoname="Left Card Headline" mktomodulescope="true" default="Insert Left Card Headline" />
   <meta class="mktoString" id="left-card-body-copy" mktoname="Left Card Body Copy" mktomodulescope="true" default="Insert Left Card Body Copy" />
@@ -53,20 +53,21 @@
   <meta class="mktoString" id="right-card-body-copy" mktoname="Right Card Body Copy" mktomodulescope="true" default="Insert Right Card Body Copy" />
   <meta class="mktoString" id="right-card-button-text" mktoname="Right Card Button Text" mktomodulescope="true" default="Learn More" />
   <meta class="mktoString" id="right-card-button-link" mktoname="Right Card Button Link" mktomodulescope="true" default="https://octiv.com" />
-  <meta class="mktoString" id="three-up-headline-container--headline" mktoname="Three Up Container Headline" mktomodulescope="true" default="Three Up Container Headline" />
-  <meta class="mktoString" id="three-up-headline-container--body-copy" mktoname="Three Up Container Body Copy" mktomodulescope="true" default="Three Up Container Body Copy" />
+  <meta class="mktoBoolean" id="three-up-headline-container--has-background-image" mktoName="Has Background Image?" mktomodulescope="true" default="false" false_value="" true_value="client-success-logos" false_value_name="NO" true_value_name="YES">
+  <meta class="mktoImg" id="three-up-headline-container--background-image" mktoname="Background Image" mktomodulescope="true" default="http://lp.octiv.com/rs/625-MXY-689/images/white-bg.png" />
+  <meta class="mktoString" id="three-up-headline-container--headline" mktoname="Headline" mktomodulescope="true" default="Three Up Container Headline" />
+  <meta class="mktoString" id="three-up-headline-container--body-copy" mktoname="Body Copy" mktomodulescope="true" default="Three Up Container Body Copy" />
   <meta class="mktoImg" id="three-up-headline-container--left-image" mktoname="Left Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
-  <meta class="mktoString" id="three-up-headline-container--left-link" mktoname="Three Up Container Left Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="three-up-headline-container--left-link" mktoname="Left Link" mktomodulescope="true" default="https://octiv.com" />
   <meta class="mktoImg" id="three-up-headline-container--center-image" mktoname="Center Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
-  <meta class="mktoString" id="three-up-headline-container--center-link" mktoname="Three Up Container Center Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="three-up-headline-container--center-link" mktoname="Center Link" mktomodulescope="true" default="https://octiv.com" />
   <meta class="mktoImg" id="three-up-headline-container--right-image" mktoname="Right Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
-  <meta class="mktoString" id="three-up-headline-container--right-link" mktoname="Three Up Container Right Link" mktomodulescope="true" default="https://octiv.com" />
-  <meta class="mktoImg" id="three-up-headline-container--background-image" mktoname="Three Up Container Background Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
-  <meta class="mktoString" id="employee-name" mktoname="Employee Name" mktomodulescope="true" default="Insert First Last" />
-  <meta class="mktoString" id="employee-bio" mktoname="Employee Bio" mktomodulescope="true" default="Insert Employee Bio" />
-  <meta class="mktoString" id="employee-linkedin" mktoname="Employee Linkedin" mktomodulescope="true" default="Insert Employee Linkedin URL" />
-  <meta class="mktoString" id="employee-twitter" mktoname="Employee Twitter" mktomodulescope="true" default="Insert Employee Twitter URL" />
-  <meta class="mktoImg" id="employee-headshot" mktoname="Employee Headshot" mktomodulescope="true" default="http://lp.octiv.com/rs/625-MXY-689/images/employee-highlight.png" />
+  <meta class="mktoString" id="three-up-headline-container--right-link" mktoname="Right Link" mktomodulescope="true" default="https://octiv.com" />
+  <meta class="mktoString" id="employee-name" mktoname="Name" mktomodulescope="true" default="Insert First Last" />
+  <meta class="mktoString" id="employee-bio" mktoname="Bio" mktomodulescope="true" default="Insert Employee Bio" />
+  <meta class="mktoString" id="employee-linkedin" mktoname="Linkedin" mktomodulescope="true" default="Insert Employee Linkedin URL" />
+  <meta class="mktoString" id="employee-twitter" mktoname="Twitter" mktomodulescope="true" default="Insert Employee Twitter URL" />
+  <meta class="mktoImg" id="employee-headshot" mktoname="Headshot" mktomodulescope="true" default="http://lp.octiv.com/rs/625-MXY-689/images/employee-highlight.png" />
   <style type="text/css">
     /* CLIENT-SPECIFIC STYLES */
 #outlook a { padding: 0; }
@@ -648,7 +649,7 @@ CONTAINER SPACER
 THREE UP -- HEADLINE CONTAINER
 ===============================
 -->
-<table class="three-up mktoModule client-success-logos" mktoaddbydefault="true" id="three-up-headline-container" mktoname="Three Up Container With Headline" style="background-image: url(${three-up-headline-container--background-image}); background-size: cover; background-position: center;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<table class="three-up mktoModule ${three-up-headline-container--has-background-image}" mktoaddbydefault="true" id="three-up-headline-container" mktoname="Three Up Container With Headline" style="background-image: url(${three-up-headline-container--background-image}); background-size: cover; background-position: center;" border="0" cellpadding="0" cellspacing="0" width="100%">
   <tbody>
     <tr>
       <td class="container" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 16px 36px; text-align: center;">
@@ -754,25 +755,33 @@ UPCOMING EVENTS
                       <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #42b0d8; border-radius: 50%; line-height: 1;">
                         <strong class="mktoText" id="event-one-date" mktoName="Event One Date" style="display: inline-block; margin: 12px auto 0; color: #42b0d8;">Jun<br />8</strong>
                       </div>
-                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #42b0d8;">June 2017 Tips &amp; Tricks</a>
+                      <p class="mktoText" id="event-one-title" mktoName="Event One Title & Link">
+                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #42b0d8;">Event Title</a>
+                      </p>
                     </td>
                     <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
                       <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #33ab40; border-radius: 50%; line-height: 1;">
-                        <strong style="display: inline-block; margin: 12px auto 0; color: #33ab40;">Jul<br />8</strong>
+                        <strong class="mktoText" id="event-two-date" mktoName="Event Two Date" style="display: inline-block; margin: 12px auto 0; color: #33ab40;">Jul<br />8</strong>
                       </div>
-                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #33ab40;">July 2017 Tips &amp; Tricks</a>
+                      <p class="mktoText" id="event-two-title" mktoName="Event Two Title & Link">
+                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #33ab40;">Event Title</a>
+                      </p>
                     </td>
                     <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
                       <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #b949f5; border-radius: 50%; line-height: 1;">
-                        <strong style="display: inline-block; margin: 12px auto 0; color: #b949f5;">Aug<br />8</strong>
+                        <strong class="mktoText" id="event-three-date" mktoName="Event Three Date" style="display: inline-block; margin: 12px auto 0; color: #b949f5;">Aug<br />8</strong>
                       </div>
-                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #b949f5;">August 2017 Tips &amp; Tricks</a>
+                      <p class="mktoText" id="event-three-title" mktoName="Event Three Title & Link">
+                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #b949f5;">Event Title</a>
+                      </p>
                     </td>
                     <td class="content-table mobile-block upcoming-event-item" style="text-align: center; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000;">
                       <div style="display: inline-block; width: 55px; height: 55px; background-color: #ffffff; border: 3px solid #fac500; border-radius: 50%; line-height: 1;">
-                        <strong style="display: inline-block; margin: 12px auto 0; color: #fac500;">Sep<br />8</strong>
+                        <strong class="mktoText" id="event-four-date" mktoName="Event Four Date" style="display: inline-block; margin: 12px auto 0; color: #fac500;">Sep<br />8</strong>
                       </div>
-                      <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #fac500;">Septemeber 2017 Tips &amp; Tricks</a>
+                      <p class="mktoText" id="event-four-title" mktoName="Event Four Title & Link">
+                        <a href="#0" target="_blank" style="display: block; margin-top: 5px; padding: 0 20px; text-decoration: none; font-weight: bold; color: #fac500;">Event Title</a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -814,10 +823,12 @@ LINK ROUNDUP
                   <td>
                     <div style="border: 1px solid #42b0d8; border-radius: 5px; padding: 18px;">
                       <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #42b0d8;">Adoption Tips</h4>
-                      <ul class="mktEditable" id="adoption-tips" mktoname="Adoption Tips" style="margin: 0; padding: 0;">
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Powerpoint &amp; Excel Doc</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Example User Guide</a></li><li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
-                      </ul>
+                      <div class="mktEditable" id="adoption-tips" mktoname="Adoption Tips">
+                        <ul style="margin: 0; padding: 0;">
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Powerpoint &amp; Excel Doc</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Example User Guide</a></li><li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -829,11 +840,13 @@ LINK ROUNDUP
                   <td>
                     <div style="border: 1px solid #33ab40; border-radius: 5px; padding: 18px;">
                       <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #33ab40;">Helpful Links</h4>
-                      <ul class="mktEditable" id="helpful-links" mktoname="Helpful Links" style="margin: 0; padding: 0;">
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Octiv Support</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Contact Billing</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
-                      </ul>
+                      <div class="mktEditable" id="helpful-links" mktoname="Helpful Links">
+                        <ul style="margin: 0; padding: 0;">
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Octiv Support</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Contact Billing</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Need This</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -857,11 +870,13 @@ LINK ROUNDUP
                   <td>
                     <div style="border: 1px solid #b949f5; border-radius: 5px; padding: 18px;">
                       <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #b949f5;">Past Webinars</h4>
-                      <ul class="mktEditable" id="past-webinars" mktoname="Past Webinars" style="margin: 0; padding: 0;">
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">June 2017 Tips &amp; Tricks</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">May 2017 Tips &amp; Tricks</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">April 2017 Tips &amp; Tricks</a></li>
-                      </ul>
+                      <div class="mktEditable" id="past-webinars" mktoname="Past Webinars">
+                        <ul style="margin: 0; padding: 0;">
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">June 2017 Tips &amp; Tricks</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">May 2017 Tips &amp; Tricks</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">April 2017 Tips &amp; Tricks</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -873,11 +888,13 @@ LINK ROUNDUP
                   <td>
                     <div style="border: 1px solid #fac500; border-radius: 5px; padding: 18px;">
                       <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #fac500;">Let's Chat</h4>
-                      <ul class="mktEditable" id="lets-chat" mktoname="Let's Chat" style="margin: 0; padding: 0;">
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up - Training Needed&body=I'm interested in chatting about training. I’d like to review:" style="text-decoration: none; color: #777777;">Need Training?</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up  - Requesting Additional Users&body=I’m interested in chatting about adding additional users to my account. I need to add ___(#) users." style="text-decoration: none; color: #777777;">Need More Users?</a></li>
-                        <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up - Questions About My Account&body=I’m interested in chatting about my account. I’d like to review:" style="text-decoration: none; color: #777777;">Questions about Your Account?</a></li>
-                      </ul>
+                      <div class="mktEditable" id="lets-chat" mktoname="Let's Chat">
+                        <ul style="margin: 0; padding: 0;">
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up - Training Needed&body=I'm interested in chatting about training. I’d like to review:" style="text-decoration: none; color: #777777;">Need Training?</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up  - Requesting Additional Users&body=I’m interested in chatting about adding additional users to my account. I need to add ___(#) users." style="text-decoration: none; color: #777777;">Need More Users?</a></li>
+                          <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter Follow-up - Questions About My Account&body=I’m interested in chatting about my account. I’d like to review:" style="text-decoration: none; color: #777777;">Questions about Your Account?</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </td>
                 </tr>
