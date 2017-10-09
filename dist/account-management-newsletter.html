@@ -41,6 +41,7 @@
   <meta class="mktoString" id="notch-body-copy" mktoname="Body Copy" default="Insert Notch Body Copy" />
   <meta class="mktoString" id="notch-primary-button-text" mktoname="Primary Button Text" default="Primary Text" />
   <meta class="mktoString" id="notch-primary-button-link" mktoname="Primary Button Link" default="https://octiv.com" />
+  <meta class="mktoBoolean" id="notch--has-secondary-button" mktoName="Has Secondary Button?" default="true" false_value="no-secondary-link" true_value=" " false_value_name="NO" true_value_name="YES">
   <meta class="mktoString" id="notch-secondary-button-text" mktoname="Secondary Button Text" default="Secondary Text" />
   <meta class="mktoString" id="notch-secondary-button-link" mktoname="Secondary Button Link" default="https://octiv.com" />
   <meta class="mktoImg" id="left-card-image" mktoname="Left Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
@@ -264,6 +265,9 @@ a {
       width: 100% !important;
       box-shadow: 0 3px 15px #222222;
     }
+    .no-secondary-link {
+      display: none;
+    }
     @media screen and (max-width: 599px) {
       .three-up .content-table {
         margin-bottom: 20px;
@@ -294,6 +298,9 @@ a {
       }
       .link-roundup-container .content-table {
         margin-bottom: 20px;
+      }
+      .mobile-block .mktoText {
+        display: inline-block;
       }
     }
   </style>
@@ -475,7 +482,7 @@ HERO WITH NOTCH
                                 <td class="content-table mobile-block" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
                                   <a class="email-button" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #ed4c06; border-top: 9px solid #ed4c06; border-right: 18px solid #ed4c06; border-bottom: 9px solid #ed4c06; border-left: 18px solid #ed4c06; display: inline-block; color: #ffffff; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none; border-radius: 5px; transition: all 200ms ease-out;" href="${notch-primary-button-link}" target="_blank">${notch-primary-button-text}</a>
                                 </td>
-                                <td class="content-table mobile-block mobile-text-center" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
+                                <td class="content-table mobile-block mobile-text-center ${notch--has-secondary-button}" align="center" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 18px; text-align: left;">
                                   <a class="email-button button-arrow" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: transparent;border-top: 9px solid transparent;border-right: 18px solid transparent;border-bottom: 9px solid transparent;border-left: 18px solid transparent;display: inline-block;color: #000000;font-size: 18px;font-weight: normal;line-height: 24px;text-decoration: none;border-radius: 5px; box-shadow: inset 0 -3px 0 #42b0d8; padding: 0 0 3px; transition: all 200ms ease-out;" href="${notch-secondary-button-link}" target="_blank">${notch-secondary-button-text} &nbsp;></a>
                                 </td>
                               </tr>
@@ -738,8 +745,8 @@ UPCOMING EVENTS
                   <tr>
                     <td width="50" style="vertical-align: top; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 5px;"><img src="http://lp.octiv.com/rs/625-MXY-689/images/calendar-icon.png" alt=""></td>
                     <td style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 20px;">
-                      <h2 style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Upcoming Events</h2>
-                      <p style="margin: 0; padding: 0; font-size: 14px; line-height: 1.3;">Catch up and mark your calendars with the Relationship Management team on their monthly webinar series to review new enhancements, best practices, and featured document workflows.</p>
+                      <h2 class="mktEditable" id="upcoming-events-headline" mktoname="Upcoming Events Headline" style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Upcoming Events</h2>
+                      <p class="mktEditable" id="upcoming-events-body-copy" mktoname="Upcoming Events Body Copy" style="margin: 0; padding: 0; font-size: 14px; line-height: 1.3;">Mark your calendars to catch up with members of the Relationship Management team at upcoming webinars and events.</p>
                     </td>
                   </tr>
                 </tbody>
@@ -807,8 +814,8 @@ LINK ROUNDUP
   <tbody>
     <tr>
       <td class="container" style="text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px; padding: 36px 36px 0; text-align: center;">
-        <h2 style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Link Roundup</h2>
-        <p style="margin: 0; padding: 0; font-size: 16px; line-height: 1.3;">Some other stuff for you to dig into.</p>
+        <h2 class="mktEditable" id="roundup-headline" mktoname="Roundup Headline" style="margin: 0; padding: 0; text-transform: uppercase; line-height: 1;">Resource Roundup</h2>
+        <p class="mktEditable" id="roundup-subheadline" mktoname="Roundup Sub Headline" style="margin: 0; padding: 0; font-size: 16px; line-height: 1.3;">Additional resources to check out.</p>
       </td>
     </tr>
     <tr>
@@ -822,7 +829,7 @@ LINK ROUNDUP
                 <tr>
                   <td>
                     <div style="border: 1px solid #42b0d8; border-radius: 5px; padding: 18px;">
-                      <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #42b0d8;">Adoption Tips</h4>
+                      <h4 class="mktEditable" id="roundup-one-headline" mktoname="Roundup One Headline" style="margin: 0; padding: 0; margin-bottom: 0px; color: #42b0d8;">Adoption Tips</h4>
                       <div class="mktEditable" id="adoption-tips" mktoname="Adoption Tips">
                         <ul style="margin: 0; padding: 0;">
                           <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Powerpoint &amp; Excel Doc</a></li>
@@ -839,7 +846,7 @@ LINK ROUNDUP
                 <tr>
                   <td>
                     <div style="border: 1px solid #33ab40; border-radius: 5px; padding: 18px;">
-                      <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #33ab40;">Helpful Links</h4>
+                      <h4 class="mktEditable" id="roundup-two-headline" mktoname="Roundup Two Headline" style="margin: 0; padding: 0; margin-bottom: 0px; color: #33ab40;">Support Center</h4>
                       <div class="mktEditable" id="helpful-links" mktoname="Helpful Links">
                         <ul style="margin: 0; padding: 0;">
                           <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">Octiv Support</a></li>
@@ -869,7 +876,7 @@ LINK ROUNDUP
                 <tr>
                   <td>
                     <div style="border: 1px solid #b949f5; border-radius: 5px; padding: 18px;">
-                      <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #b949f5;">Past Webinars</h4>
+                      <h4 class="mktEditable" id="roundup-three-headline" mktoname="Roundup Three Headline" style="margin: 0; padding: 0; margin-bottom: 0px; color: #b949f5;">On-Demand Webinars</h4>
                       <div class="mktEditable" id="past-webinars" mktoname="Past Webinars">
                         <ul style="margin: 0; padding: 0;">
                           <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="#0" style="text-decoration: none; color: #777777;">June 2017 Tips &amp; Tricks</a></li>
@@ -887,7 +894,7 @@ LINK ROUNDUP
                 <tr>
                   <td>
                     <div style="border: 1px solid #fac500; border-radius: 5px; padding: 18px;">
-                      <h4 style="margin: 0; padding: 0; margin-bottom: 0px; color: #fac500;">Let's Chat</h4>
+                      <h4 class="mktEditable" id="roundup-four-headline" mktoname="Roundup Four Headline" style="margin: 0; padding: 0; margin-bottom: 0px; color: #fac500;">Connect with Us</h4>
                       <div class="mktEditable" id="lets-chat" mktoname="Let's Chat">
                         <ul style="margin: 0; padding: 0;">
                           <li style="margin: 0; padding: 0; margin-left: 18px; font-size: 14px;"><a href="mailto:customersuccess@octiv.com?subject=Newsletter%20Follow-up%20-%20Training%20Needed&body=I%27m%20interested%20in%20chatting%20about%20training.%20I%27d%20like%20to%20review:" style="text-decoration: none; color: #777777;">Need Training?</a></li>

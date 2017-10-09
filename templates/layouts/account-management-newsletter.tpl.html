@@ -7,6 +7,7 @@
   <meta class="mktoString" id="notch-body-copy" mktoname="Body Copy" default="Insert Notch Body Copy" />
   <meta class="mktoString" id="notch-primary-button-text" mktoname="Primary Button Text" default="Primary Text" />
   <meta class="mktoString" id="notch-primary-button-link" mktoname="Primary Button Link" default="https://octiv.com" />
+  <meta class="mktoBoolean" id="notch--has-secondary-button" mktoName="Has Secondary Button?" default="true" false_value="no-secondary-link" true_value=" " false_value_name="NO" true_value_name="YES">
   <meta class="mktoString" id="notch-secondary-button-text" mktoname="Secondary Button Text" default="Secondary Text" />
   <meta class="mktoString" id="notch-secondary-button-link" mktoname="Secondary Button Link" default="https://octiv.com" />
   <meta class="mktoImg" id="left-card-image" mktoname="Left Card Image" mktomodulescope="true" default="https://unsplash.it/700/466" />
@@ -58,6 +59,9 @@
       width: 100% !important;
       box-shadow: 0 3px 15px #222222;
     }
+    .no-secondary-link {
+      display: none;
+    }
     @media screen and (max-width: 599px) {
       .three-up .content-table {
         margin-bottom: 20px;
@@ -88,6 +92,9 @@
       }
       .link-roundup-container .content-table {
         margin-bottom: 20px;
+      }
+      .mobile-block .mktoText {
+        display: inline-block;
       }
     }
   </style>
@@ -129,7 +136,9 @@ EMAIL CONTAINER
       <tr>
         <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px;">
           @@include('hero/_hero--with-notch.html')
-          @@include('two-up/_two-up--notch.html')
+          @@include('two-up/_two-up--notch.html', {
+            "containerClass": "${notch--has-secondary-button}"
+          })
         </td>
       </tr>
       <tr>
