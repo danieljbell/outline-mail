@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      background-image: url(/outline-mail/img/bg-pattern-light.png), linear-gradient(#757a82,#474a4f);
+      background-size: 300px, auto;
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #fff;
+      padding: 1rem;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      /*justify-content: center;*/
+    }
+    li {
+      width: 100%;
+      max-width: 250px;
+      margin-right: 2rem;
+      margin-bottom: 3rem;
+    }
+    li img {
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    a {
+      text-decoration: none;
+    }
+    li a {
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-primary {
+      display: inline-block;
+      background-color: #ed4c06;
+      color: #ffffff;
+      padding: 0.5rem 0.75rem;
+      text-align: center;
+      margin: 1rem auto 0;
+      border-radius: 5px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    }
+    .box {
+      background-color: #f0f0f0;
+      background-image: linear-gradient(#fff,#f0f0f0);
+      border-radius: 5px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.25);
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    .box h2 {
+      color: #000;
+      margin: 0 0 1rem;
+      /*text-align: center;*/
+    }
+    hr {
+      background-color: transparent;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: 767px) {
+      html, body {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Standard Emails</h2>
+    <ul>
+      <li>
+        <a href="/outline-mail/standard-light.html">
+          <img src="/outline-mail/img/standard-light.png" alt="">
+          <p class="btn-primary">Standard - Light</p>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <h2>Jumbo Hero</h2>
+    <ul>
+      <li>
+        <a href="/outline-mail/jumbo-hero-light.html">
+          <img src="/outline-mail/img/jumbo-hero-light.png" alt="">
+          <p class="btn-primary">Jumbo Hero - Light</p>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <h2>Newsletters</h2>
+    <ul>
+      <li>
+        <a href="/outline-mail/account-management-newsletter.html">
+          <img src="/outline-mail/img/account-management-newsletter.png" alt="" />
+          <p class="btn-primary">Account Management</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
