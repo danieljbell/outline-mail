@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Confirm Your Octiv Account</title>
+
+  <style type="text/css">
+    @@include('style/_global-style.css')
+  </style>
+
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+</head>
+
+<body style="height: 100%; margin: 0 !important; padding: 0 !important;">
+
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, font, span, strong {
+        font-family: Helvetica, Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f0f0f0" style="background-image: url(http://lp.octiv.com/rs/625-MXY-689/images/bg-pattern-dark.png), linear-gradient(#ffffff,#f0f0f0); background-size: 250px, auto; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 1.3; padding: 0 1rem 2rem;" align="center">
+
+@@include('header/_header-logo-only.html')
+<!--
+=====================
+EMAIL CONTAINER
+=====================
+-->
+  <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.15);">
+    <tbody>
+      <tr>
+        <td style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; color: rgb(0, 0, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color: #000000; font-size: 18px; line-height: 22px;">
+          @@include('hero/_hero--with-notch.html')
+        </td>
+      </tr>
+      <tr>
+        <td class="mktoContainer" id="template-wrapper" style="font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; font-size: 18px; line-height: 22px;">
+          @@include('one-up/_one-up--notch.html')
+          @@include('misc/_container-spacer.html')
+          @@include('one-up/_one-up--passable.html', {
+            "container-text": "<strong>To easily log in later, save this URL:</strong><br><a href=\"{{account_domain}}\" target=\"_blank\" style=\"text-decoration: none;\">{{account_domain}}",
+            "alignment": "center",
+            "font-size": "14px",
+            "line-height": "1.4"
+          })
+          @@include('one-up/_one-up--passable.html', {
+            "container-text": "<strong>Username:</strong><br><a href=\"mailto:{{account_email}}\" target=\"_blank\" style=\"text-decoration: none;\">{{account_email}}",
+            "alignment": "center",
+            "font-size": "14px",
+            "line-height": "1.4"
+          })
+        </td>
+      </tr>
+
+@@include('misc/_spacer.html')
+    </tbody>
+  </table>
+<!--
+=====================
+/EMAIL CONTAINER
+=====================
+-->
+
+        @@include('footer/_footer-light--product.html')
+
+        </td>
+      </tr>
+    </table>
+  <!-- /Background -->
+
+</body>
+</html>
